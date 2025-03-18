@@ -17,613 +17,782 @@
 <link href='https://codewil.blogspot.com/favicon.ico' rel='icon' sizes='192x192'/>
 <link href='https://codewil.blogspot.com/favicon.ico' rel='apple-touch-icon'/>
 <title>Codewil - Herramientas productivos web</title>
-<style>
-:root{--fz_s1:.57vw;--fz_s2:.63vw;--fz_s3:.7vw;--fz_s4:.78vw;--fz_m:.8vw;--fz_m1:.85vw;--fz_m2:.9vw;--fz_l1:1.02vw;--fz_l2:1.18vw;--fz_l3:4.8vw;--ff_P:'Poppins',segoe ui;--ff_R:'Rubik',segoe ui;--F:#fff;--0:#000;--D:#ddd;--bgc:#eef3f7;--bxsg:0 0.07vw 0.11vw 0 #c4c5c6,0 0.06vw 0.16vw 0.06vw #e1e2e2;--bxs1:0.8vw 0.8vw 1.4vw #c8d0e7,-0.2vw -0.2vw 1.8vw #fff;--bxs2:0 0.18vw 0.37vw rgba(0,0,0,0.1);--tst:translateY(-.5vh);--tr5:all .5s ease-in-out;--crp:pointer;--bgr1:#f8fafc;}:root[data-theme="Paz"]{--bg:#e0ffe0;--bgb:#c2ffc4;--bgs:#38d63d;--lko:#00c853;--co1:#00b300;--co2:#29c72e;--txg:#000;--txa:#000;--bxs:0 0.18vh 0.7vw 0 #56dc5a,0 0.3vh 0.9vw 0 #c1edc0;}:root[data-theme="Dulce"]{--bg:#fef1f1;--bgb:#ffe5e8;--bgs:#ff808a;--lko:#d81b60;--co1:#ff3849;--co2:#ff5c69;--txg:#000;--txa:#000;--bxs:0 0.18vh 0.7vw 0 #ff99a1,0 0.3vh 0.9vw 0 #ffdbde;}:root[data-theme="Cielo"]{--bg:#d6f4ff;--bgb:#c2ecff;--bgs:#00b4f5;--lko:#2563eb;--co1:#1976D2;--co2:#00b4f5;--txg:#000;--txa:#000;--bxs:0 0.18vh 0.7vw 0 #57cfff,0 0.3vh 0.9vw 0 #b8ebff;}:root[data-theme="Mora"]{--bg:#eee0ff;--bgb:#eee0ff;--bgs:#8629ff;--lko:#5c00d2;--co1:#5800cc;--co2:#8629ff;--txg:#000;--bxs:0 0.18vh 0.7vw 0 #bd8aff,0 0.3vh 0.9vw 0 #d4b3ff;}:root[data-theme="Futuro"]{--bg:#42588f;--bgb:hsl(223 37% 38% / 1);--bgs:#42588f;--lko:#42588f;--co1:#2b3a5e;--co2:#00f3ff;--txg:#FFF;--txa:#00f3ff;--bxs:0 0.18vh 0.7vw 0 #42588f,0 0.3vh 0.9vw 0 #384b7a;}.th1{background:#29C72E}.th2{background:#FF5C69}.th3{background:#0EBEFF}.th4{background:#7000FF}.th5{background:#21273B}.mthemes{top:35vh;position:fixed}.thm{width:1.7vw;height:2.3vw;display:flex}.thm:hover,.mtha{width:2.3vw;border-radius:0 .3vw .3vw 0}*{margin:0;padding:0;box-sizing:border-box;font-family:var(--ff_P);font-size:var(--fz_m);}::-webkit-scrollbar{display:none}body{background:var(--bgb)}a{text-decoration:none}li{list-style:none}button,input,textarea,.txed{border:none;outline:none}input{border:.1vw solid var(--bgs);padding:1vh .5vw;border-radius:.25vw}[data-wicon]{padding:1.1vh .2vw}[data-wicon] svg{width:var(--fz_s3);fill:var(--co2)}.dpf,.dfc,.dfw,.df2,.df3,.df4{display:flex}.dfc{justify-content:center;align-items:center}.dfw{justify-content:space-between}.df2,.df3,.df4{flex-wrap:wrap;gap:1vw}.df2>*{flex:1 1 49%}.df3>*{flex:1 1 32%}.df4>*{flex:1 1 24%}.dpg,.cols,.dg2,.dg3,.dg4,.dg5,.dg6{display:grid}.dgs,.pdim{grid-template-columns:62vw auto;align-items:center}.dgc{display:grid;justify-content:center;justify-items:center;gap:2vh 0}.dg2{grid-template-columns:48vw auto}.dg3{grid-template-columns:repeat(3,1fr);gap:2vh 1vw}.dg4{grid-template-columns:repeat(4,1fr);gap:1vw}.dg5{grid-template-columns:repeat(5,1fr);gap:1vw}.dg6{grid-template-columns:repeat(6,1fr);gap:1vw}.txc,.thr,.pdim,.gresult{text-align:center}.tr5,.thm:hover,.mtha{cursor:pointer;transition:.5s ease-in-out}.bfl:hover,button:hover,.btha,.cvin span:hover{transform:var(--tst);transition:var(--tr5);cursor:var(--crp)}.mwp,.mhr{max-width:80vw;margin:auto;width:100%}.mhd{height:1.95vw;}.mfo{height:3vh;position:fixed;bottom:0;width:100%;background:var(--bgb);color:var(--txg);}.mct{min-height:93vh;padding-top:.68vh}.mwb{height:100vh}.ftx{font-size:var(--fz_s1);margin:0 .2vw}a{color:var(--txa)}img{max-width:100%}nav a{color:var(--txa);padding:.85vh .38vw;letter-spacing:.02vw;font-size:var(--fz_s3);font-family:var(--ff-P);}.bhr:hover,.bha{font-weight:600;border-bottom:.11vw solid var(--co2)}.dpn,.foo,.mhr,.ibf{display:none}.dpb,.hra,.ibfa{display:block}.mlg{font-weight:500}.bfl{top:0;right:4vw;font-weight:800;padding:.4vw 3vw;position:absolute;}.svi{width:.7vw;fill:var(--lko)}.mhr{background:var(--bgc);border-radius:.4vw;padding:2vh 1vw 3.8vh 1vw;box-shadow:var(--bxsg);}.thr{font-size:var(--fz_l1)}table{border-collapse:collapse;box-shadow:var(--bxs1)}th,td{padding:1.2vh 3vw}.tbh{background:var(--bgs);color:var(--F)}.thr{padding-bottom:1vh}.sc01 th,.sc01 td{padding:1.5vh 7vw}.vtd{background:var(--bgr1)}.up20{margin-block:2vh}button{padding:1vh 2vw;background:var(--bgs);color:var(--F);border-radius:.2vw}button:hover,.btha,.shwa{background:var(--co1);font-weight:700;}.txe{width:100%;min-height:25vh;min-width:100%;max-width:100%;border-radius:.3vw;padding:1vh 1vw;font-size:var(--fz_m2);line-height:1.18vw;border:.1vw solid var(--bgs);font-family:var(--ff_R);letter-spacing:.02vw;overflow-x:auto}.txed{background:var(--F)}.mhr h3{padding-block:1.5vh .5vh}.txrs{background:var(--bgr1)}.mfrs{padding-block:1vh 1.8vw}.frc{font-size:var(--fz_m);padding:1vh 1.8vw;background:var(--bgs);color:var(--F);font-weight:600}.frd{background:var(--bgb);padding:1vh 2vw}.btn-group{margin-right:1vw;}.toolbar{padding-block:.5vh 1.5vh}#ki06{line-height:3.6vh}.dpx3{grid-template-columns:repeat(3,25.6vw);gap:.5vw}.dpx3 th,.dpx3 td{padding:0.6vh 2vw}.up08{margin-top:1vh}.conm{font-weight:600}.cobg{width:4vw;height:4vh}.cols{grid-template-columns:.07fr .09fr 1fr}.cols{align-items:center}.csd{padding:1vh 0}#dco,.dci{width:5vw;height:5vh;padding:0;border-radius:.25vw;margin:0 .25vw}.ccvs{position:relative;border:.024vw solid #ddd;box-shadow:var(--bxs2);overflow:hidden;border-radius:.4vw;background:var(--F);}#canvas{display:block;cursor:crosshair;}.cvls{flex-wrap:wrap;gap:1vh;background:#f5f5f5;padding:1.5vh .5vw;border-radius:.4vw;box-shadow:0 2px 4px rgba(0,0,0,0.1);}.cvtl{display:flex;gap:0 1vh;flex-wrap:wrap;}.cvls button{padding:1vh 1.5vw;font-size:var(--fz_s3);}.cvls button.active{background-color:var(--co1);box-shadow:inset 0 2px 4px rgba(0,0,0,0.2);}.cvls input{width:4vw;}.cvls input[type="color"],.cvls select{padding:0;border:none;cursor:pointer;}.cvls select:focus,.cvls option{border:none;outline:none;}.cvin label,.cvin span,.cvin input,.cvin select{font-size:var(--fz_m);display:flex;margin-right:.15vw;align-items:center;padding:0 .18vw;height:4.2vh;justify-content:center;border-radius:.28vw;text-align:center;}.cvpi,.cvtx,.cvcp{width:1.9vw;box-shadow:var(--bxs2);background:var(--F);}.cvin input,.cvbs{margin-left:.2vw;}[data-shwg]{font-size:var(--fz_s3);padding:1vh 1.5vw;margin-block:2vh 2.5vh;}.gresult button{font-size:var(--fz_s2)}.gresult h3,.gresult .txe{font-size:var(--fz_m)}[data-wel="user"]{font-size:var(--fz_s3);font-weight:500;}.gresult .thr{font-size:var(--fz_m2);line-height:1;text-transform:uppercase;padding:0;}@media (max-width:770px){:root{--fz_s1:1.1vw;--fz_s2:1.25vw;--fz_s3:1.3vw;--fz_s4:1.4vw;--fz_m:1.5vw;--fz_m1:1.6vw;--fz_m2:1.7vw;--fz_l1:1.8vw;--fz_l2:2vw;--fz_l3:8.5vw;}.df2,.df3,.df4{flex-wrap:wrap}.df2>*{flex:1 1 99%}.df3>*{flex:1 1 33%}.df4>*{flex:1 1 24%}.dgs,.pdim{grid-template-columns:62vw auto;align-items:center}.dgc{display:grid;justify-content:center;justify-items:center}.dg2{grid-template-columns:48vw auto}.dg3{grid-template-columns:repeat(3,1fr)}.dg4{grid-template-columns:repeat(4,1fr)}.dg5{grid-template-columns:repeat(5,1fr)}.dg6{grid-template-columns:repeat(6,1fr)}.mhd{height:3vw}.nvy{display:none}.mnv{justify-content:center}.mwp,.mhr{max-width:97vw}[data-shwg],button{margin-block:1vw}.txe{line-height:1.5}.thm{width:3vw;height:3.5vw}.thm:hover,.mtha{width:3.5vw}}@media (max-width:570px){:root{--fz_s1:2vw;--fz_s2:2.2vw;--fz_s3:2.3vw;--fz_s4:2.4vw;--fz_m:2.5vw;--fz_m1:2.7vw;--fz_m2:2.8vw;--fz_l1:3vw;--fz_l2:3.3vw;--fz_l3:9.5vw;}.df2,.df3,.df4{flex-wrap:wrap}.df2>*{flex:1 1 99%}.df3>*{flex:1 1 51%}.df4>*{flex:1 1 24%}.dgs,.pdim{grid-template-columns:62vw auto;align-items:center}.dgc{display:grid;justify-content:center;justify-items:center}.dg2{grid-template-columns:48vw auto}.dg3{grid-template-columns:repeat(3,1fr)}.dg4{grid-template-columns:repeat(4,1fr)}.dg5{grid-template-columns:repeat(5,1fr)}.dg6{grid-template-columns:repeat(6,1fr)}.mhd{height:5vw}button{border-radius:.6vw}[data-shwg]{font-size:var(--fz_s2);padding:1vh}.gresult{margin-block:2vw}.mfo{flex-wrap:wrap;padding-block:1vw 9vw}.thm{width:4vw;height:4.5vw}.thm:hover,.mtha{width:4.5vw}}@media (max-width:470px){:root{--fz_s1:2.8vw;--fz_s2:2.95vw;--fz_s3:3.1vw;--fz_s4:3.2vw;--fz_m:3.3vw;--fz_m1:3.5vw;--fz_m2:3.6vw;--fz_l1:3.8vw;--fz_l2:4.1vw;--fz_l3:9.5vw;}.mhd{height:7vw}.thm{width:5vw;height:5.5vw}.thm:hover,.mtha{width:5.5vw}}
-</style>
+<style id='page-skin-1' type='text/css'><!--
+:root{--fz_s1:.62vw;--fz_s2:.67vw;--fz_s3:.72vw;--fz_s4:.77vw;--fz_m:.8vw;--fz_m1:.85vw;--fz_m2:.9vw;--fz_m3:.95vw;--fz_l:1.0;--fz_l1:1.07vw;--fz_l2:1.15vw;--fz_l3:1.2vw;--fz_t1:1.73vw;--fz_t2:2.30vw;--ff_P:'Poppins',segoe ui;--ff_R:'Rubik',segoe ui;--F:#fff;--0:#000;--D:#eef3f7;--bsh:0 4px 6px rgba(0,0,0,0.1);}:root[data-theme="Cielo"]{--bg:#ccefff;--wb:#e5f7ff;--tx:#000;--txa:#FFF;--txe:#000;--txh:#1978d7;--bdr:#66d6ff;--mco:#1978d7;--svg:#1978d7;--bxs:#b8ecff;--bga:#166bc0;--hv:#00a8e6;--hva:#1873cd;}:root[data-theme="Dulce"]{--bg:#ffccd1;--wb:#ffebed;--tx:#000;--txa:#FFF;--txe:#000;--txh:#ff3849;--bdr:#ff99a1;--mco:#ff3849;--svg:#ff3849;--bxs:#ffdbde;--bga:#ff3849;--hv:#ff7a85;--hva:#ff3849;}:root[data-theme="Paz"]{--bg:#ccffce;--wb:#ebffeb;--tx:#000;--txa:#FFF;--txe:#000;--txh:#25b62a;--bdr:#96e99a;--mco:#25b62a;--svg:#25b62a;--bxs:#c0f2c2;--bga:#00b300;--hv:#3cd741;--hva:#25b62a;}:root[data-theme="Mora"]{--bg:#e4ccff;--wb:#f4ebff;--tx:#000;--txa:#FFF;--txe:#000;--txh:#6a00f5;--bdr:#c799ff;--mco:#6a00f5;--svg:#6a00f5;--bxs:#ebdbff;--bga:#5800cc;--hv:#9442ff;--hva:#5f00db;}:root[data-theme="Futuro"]{--bg:#1d273f;--wb:#2a385b;--tx:#fff;--txa:#00f3ff;--txe:#3e496f;--txh:#00f3ff;--bdr:#007980;--mco:#3e496f;--svg:#00f3ff;--bxs:none;--bga:#3d5185;--hv:#4d5a89;--hva:#3e496f;}.mthemes{top:35vh;position:fixed}.tema{width:var(--fz_t1);height:var(--fz_t2);display:flex}.tema:hover,.mtha{width:var(--fz_t2);transition:.5s ease-in-out;border-radius:0 .3vw .3vw 0;}*::-webkit-scrollbar{width:.4vw}*::-webkit-scrollbar-track{background:var(--hv)}*::-webkit-scrollbar-thumb{background:var(--hva);border-radius:.1vw}*{margin:0;padding:0;cursor:pointer;color:var(--tx);box-sizing:border-box;scroll-behavior:smooth;font-size:var(--fz_m);font-family:var(--ff_P)}body{height:100vh;padding-block:5vh 0;background:var(--bg);}.txc,.sbt,.h08 *{text-align:center}.psr{position:relative}.psa{position:absolute}.dfw{display:flex;justify-content:space-between;align-items:center;gap:1vh;}.dfc,.btt,.cbx,.htop,.oph,.dibts *{display:flex;justify-content:center;align-items:center;}.dfwc{display:flex;justify-content:space-between;flex-direction:column;align-items:center;gap:1vh;}.dfs,.lbx{display:flex;align-items:center;gap:1vh;}.dfcc{display:flex;justify-content:center;flex-direction:column;align-items:center;gap:1vh;}.dfaw{display:flex;flex-wrap:wrap;justify-content:center;gap:1vh 0.5vh;}.dfaw>*{flex:1 1 auto;}.dpn,.mhr,.wgen,[type="checkbox"],[type="radio"],.npd{display:none}.dpb{display:block}.dpf,.mhra,.npda{display:flex}a{text-decoration:none}button,input,textarea,select{border:none;outline:none}button{padding:.7vh 1.5vw;border-radius:.5vh;background:var(--hv);color:var(--txa);}button:hover,.bta,.dbtx:hover{cursor:pointer;transform:translateY(-.4vh) scale(1.02);transition:all .5s ease-in-out;background:var(--hva);}.wdp{margin:auto;max-width:90vw;}nav{top:0;z-index:1;width:100%;position:fixed;background:var(--hva);box-shadow:0 0.1vw 0.1vw 0 var(--bga);}nav a{color:var(--txa);padding:.7vh .6vh;font-size:var(--fz_s2);display:inline-flex;}nav a:hover,.bha{font-weight:600;border-bottom:.1vh solid var(--txa);transition:font-weight .3s ease-in-out;box-shadow:0 0.28vh 0 0 var(--bxs);}.wgen{padding-block:0 1.5vh;flex-direction:column;gap:1vh;}.mhr{flex-direction:column;gap:.5vh;}.miwb{border-radius:.9vh;border:.01px solid var(--bdr);background:var(--wb);box-shadow:0.1vh 0.3vh 0.8vh 0 var(--bxs);}input,textarea{color:var(--txe)}h1{color:var(--txh);font-size:var(--fz_l);}input{padding:.6vh 1vh;border-radius:.25vw;border:.05vw solid var(--bg);box-shadow:0 0.06vw 0.15vw var(--hv);}.insh{width:40vw;padding:1vh;}input:focus,.txed:focus{outline:.05vw solid var(--hv);}textarea,img{max-width:100%;}.txe{width:100%;min-height:26vh;min-width:100%;border-radius:.5vh;padding:1vh 1.2vh;font-size:var(--fz_m);line-height:1.30;font-family:var(--ff_R);letter-spacing:.02vw;overflow-x:auto;background:var(--F);margin-block:0 .7vh;border:.05vw solid var(--hv);}.txe:hover{box-shadow:0.2vw 0.3vw 0.4vw 0.2vh var(--bg);transform:translateY(-.1vh) scale(1.003);transition:.3s ease-in-out;}.gbta{background:var(--hva);}.df{display:flex}.df3,.mtoo{display:flex;flex-wrap:wrap;gap:1vh;}.df3>*,.mtoo>*{flex:1 1 32%;}.dfch{display:flex;justify-content:center;gap:1vh;}.dfcv{display:flex;align-items:center;gap:1vh;}.dg{display:grid}.mtoo{padding:2vh 1vw;}.mtoo>*{border-bottom:.3vh solid var(--mco);padding-block:1vh 3vh;}.mtoo button{font-size:var(--fz_s2);}.mtoo .sbt{text-transform:uppercase;}.mhr h3{margin-block:.5vh;font-size:var(--fz_s4);}.foo{position:fixed;width:100%;bottom:0;background:var(--bg);box-shadow:0 -0.01vw 0.1vw 0 var(--hv);padding-block:.5vh;}.foo *{font-size:var(--fz_s2);margin-inline:.3vh;}.wi{width:var(--fz_s2);fill:var(--svg)}.btt{gap:.5vh;margin-block:1vh 0;}.htop .wi{display:flex;width:var(--fz_s4);margin-block:.7vh 1vh;}.htop label{gap:.5vh;margin-inline:.7vh 0;}.htop *,.hms *{font-size:var(--fz_s2);}.oph{gap:.5vh;}.npd,#ki043{min-height:60vh;}.dibts>*{background:var(--hv);margin:0 .5vh 2vh .5vh;}.dibts *{color:var(--txa);border-radius:.5vh;}.dbtx *{flex:1 1 auto}.dibts b{background:var(--mco);padding-block:1.1vh;}#ki05{min-height:60vh}.copd{gap:2vh 3vh;padding-block:1vh;}.copd div{padding:1.5vh 5vh;}.hms{margin-block:0 1vh;}.ccvs canvas{box-shadow:var(--bsh);border-radius:1vh;margin-block:.3vh .7vh;}.cvin{margin-block:1vh 0;gap:.7vh;}.cvin>*{flex:1 1 auto;}.cvin *{text-align:center;}.cvin input{width:5vh;line-height:1;}.cvpi,.cvtx,.cvcp,.cvin select{background:var(--F);padding:.5vh .2vh;border-radius:.5vh;box-shadow:var(--bsh);}#colorPicker{padding:0}.cvcp{height:3.3vh;border-radius:.5vh;}table{border-collapse:collapse;box-shadow:var(--bsh);}th,td{padding:1.2vh 3vw;color:var(--hva)}.tbh{background:var(--hv);color:var(--F)}.ttd{background:var(--D)}.vtd{background:var(--F);}.ct12{gap:1.5vh 1vh;}.mro{margin-block:1vh}.abwc{background:var(--wb);top:0;width:100%;height:100%;padding:2vh 2vw;overflow:scroll;line-height:1.80;}.abwc a{color:var(--mco);font-weight:600}.abwok{background:var(--mco);color:var(--txa);}@media (max-width:770px){:root{--fz_s1:1.12vw;--fz_s2:1.27vw;--fz_s3:1.32vw;--fz_s4:1.47vw;--fz_m:1.5vw;--fz_m1:1.55vw;--fz_m2:1.60vw;--fz_m3:1.65vw;--fz_l:1.70vw;--fz_l1:1.75vw;--fz_l2:1.80vw;--fz_l3:1.85vw;--fz_t1:2.30vw;--fz_t2:3.30vw;}.insh{width:98%}nav a{padding:.5vh .3vw;font-size:var(--fz_s2);}.mtoo>*,.ct10>*{flex:100%;}.ccvs canvas{width:92vw;height:auto;}.cvin{flex-wrap:wrap;}}@media (max-width:570px){:root{--fz_s1:2.12vw;--fz_s2:2.27vw;--fz_s3:2.32vw;--fz_s4:2.47vw;--fz_m:2.50vw;--fz_m1:2.55vw;--fz_m2:2.6vw;--fz_m3:2.65vw;--fz_l:2.70vw;--fz_l1:2.75vw;--fz_l2:2.80vw;--fz_l3:2.85vw;--fz_t1:3.30vw;--fz_t2:4.30vw;}*{cursor:auto}.miwb{max-width:96vw}}
+
+--></style>
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+
 </head>
 <body>
-<!--DIOS ES BUENO[START V21 788421146945776005]-->
-<header class='mhd '>
-    <nav class='mnv mwp dfw'>
-    <a class='mlg' href='#Logo'>Codewil</a>
-    <div class='nvy dfc'>
-    <a class='bhr bh01 bha' data-ihr='01' href='#General_hr01'>GENERAL</a>
-    <a class='bhr bh02' data-ihr='02' href='#Entities_hr02'>ENTITIES</a>
-    <a class='bhr bh03' data-ihr='03' href='#Prettier_hr03'>PRETTIER</a>
-    <a class='bhr bh04' data-ihr='04' href='#Minifier_hr04'>MINIFIER</a>
-    <a class='bhr bh05' data-ihr='05' href='#Contador_hr05'>CONTADOR</a>
-    <a class='bhr bh06' data-ihr='06' href='#ColorNotepad_hr06'>COLORES</a>
-    <a class='bhr bh07' data-ihr='07' href='#Mayusculas_hr07'>MAYUSCULAS</a>
-    <a class='bhr bh08' data-ihr='08' href='#CalculoMes_hr08'>CALCULOMES</a>
-    <a class='bhr bh09' data-ihr='09' href='#Imagenes_hr09'>IMAGENES</a>
-    <a class='bhr bh10' data-ihr='10' href='#Painter_hr10'>PAINTER</a>
-    <a class='bhr bh11' data-ihr='11' href='#CalcularPantalla_hr11'>PANTALLA</a>
-    <a class='bhr bh20' data-ihr='20' href='#AcercaPc_hr20'>ACERCAPC</a>
-    </div>
-    </nav>
-    </header>  
-    <div class='mct'>
-    <!-- GENERAL DESIGN #01-->
-    <div class='txc mhr hra' id='mhr01'>
-    <h2 data-wel='user'>Bievenido(a) Tigre, esto es tu dashboard general para hacer mas facil las converciones y actualizaciones de código. </h2>
-    <button data-shwg='02'>ENTITIES</button>
-    <button data-shwg='03'>PRETTIER</button>
-    <button data-shwg='04'>MINIFIER</button>
-    <button data-shwg='05'>CONTADOR</button>
-    <button data-shwg='06'>COLORES</button>
-    <button data-shwg='07'>MAYUSCULAS</button>
-    <button data-shwg='08'>CALCULOMES</button>
-    <button data-shwg='09'>IMAGENES</button>
-    <button data-shwg='10'>PAINTER</button>
-    <button data-shwg='11'>PANTALLA</button>
-    <button data-shwg='20'>PANTALLA</button>
-    <div class='gresult df3'></div>
-    </div>
-    <!-- ENTITIES #02-->
-    <div class='mhr' id='mhr02'>
-    <div class='hr02' data-hid='02'>
-    <h2 class='thr'>Reemplazar mis Entidades html xml #02</h2>
-    <div class='sct'>
-    <h3>Ingresa el texto: </h3>
-    <textarea class='txe txen' data-hnv='hn02' id='ki02' name='nk02'>Hola esto es un ejemplo muy genial </textarea>
-    <button class='btn' id='bnor'>Convertir a normal </button>
-    <button class='btn' id='bent'>Convertir a Entidades</button>
-    <h3>RESULTADO</h3>
-    <textarea class='txe txrs' data-hnv='hn02' id='rs02' name='nr02'></textarea>
-    </div>
-    <div class='csd'>
-    <button class='bco' data-csd='hn02'>COPIAR</button>
-    <button class='bsv' data-csd='hn02'>GUARDAR</button>
-    <button class='bdl' data-csd='hn02'>ELIMINAR</button>
-    </div>
-    </div>
-    </div>
-    <!-- PRETTIER #03-->
-    <div class='mhr' id='mhr03'>
-    <div class='hr03' data-hid='03'>
-    <h2 class='thr'>Prettier del html, css y js Online #03</h2>
-    <div class='sct'>
-    <h3>Ingresa el código: </h3>
-    <textarea class='txe txen' data-hnv='hn03' id='ki03' name='nk03'>body{love:good;amor:love}</textarea>
-    <button id='phtml'>Prettier HTML</button>
-    <button id='pcss'>Prettier CSS</button>
-    <button id='pjs'>Prettier JS</button>
-    <h3>RESULTADO</h3>
-    <textarea class='txe txrs' data-hnv='hn03' id='rs03' name='nr03'></textarea>
-    </div>
-    <div class='csd'>
-    <button class='bco' data-csd='hn03'>COPIAR</button>
-    <button class='bsv' data-csd='hn03'>GUARDAR</button>
-    <button class='bdl' data-csd='hn03'>ELIMINAR</button>
-    </div>
-    </div>
-    </div>
-    <!-- MINIFIER #04-->
-    <div class='mhr' id='mhr04'>
-    <div class='hr04' data-hid='04'>
-    <h2 class='thr'>Minifica tu codigo de HTML, CSS, JS #04</h2>
-    <div class='sct'>
-    <h3>Ingresa el código: </h3>
-    <textarea class='txe txen' data-hnv='hn04' id='ki04' name='nk04'>/* Pega tu código aquí */</textarea>
-    <button id='mhtml'>Minifica HTML</button>
-    <button id='mcss'>Minifica CSS</button>
-    <button id='mjs'>Minifica JS</button>
-    <h3>RESULTADO</h3>
-    <textarea class='txe txrs' data-hnv='hn04' id='rs04' name='nr04'></textarea>
-    </div>
-    <div class='csd'>
-    <button class='bco' data-csd='hn04'>COPIAR</button>
-    <button class='bsv' data-csd='hn04'>GUARDAR</button>
-    <button class='bdl' data-csd='hn04'>ELIMINAR</button>
-    </div>
-    </div>
-    </div>
-    <!-- CONTADOR #05-->
-    <div class='mhr' id='mhr05'>
-    <div class='hr05' data-hid='05'>
-    <h2 class='thr'>Contador de palabras, caracteres y párrafos #05</h2>
-    <div class='sct'>
-    <h3>Ingresa tu texto: </h3>
-    <textarea class='txe txen' data-hnv='hn05' id='ki05' name='nk05'>Escribe tu texto, aqui vamos a calcular todo.</textarea>
-    <div class='mfrs dfc'>
-    <spa class='frc'>Palabras: </spa>
-    <span class='frd' id='cdpl'>7</span>
-    <spa class='frc'>Caracteres (sin espacios): </spa>
-    <span class='frd' id='cdcs'>7</span>
-    <spa class='frc'>Es Caracteres (con espacios): </spa>
-    <span class='frd' id='cdcc'>7</span>
-    <spa class='frc'>Párrafos: </spa>
-    <span class='frd' id='cdpr'>7</span>
-    <spa class='frc'>Líneas: </spa>
-    <span class='frd' id='cdln'>7</span>
-    </div>
-    </div>
-    <div class='csd'>
-    <button class='bco' data-csd='hn05'>COPIAR</button>
-    <button class='bsv' data-csd='hn05'>GUARDAR</button>
-    <button class='bdl' data-csd='hn05'>ELIMINAR</button>
-    </div>
-    </div>
-    </div>
-    <!-- COLORES #06-->
-    <div class='mhr' id='mhr06'>
-    <div class='hr06' data-hid='06'>
-    <h2 class='thr'>Notepad colores desde Textarea hacia display plano #06</h2>
-    <div class='sct'>
-    <h3>Ingresa tu color: </h3>
-    <textarea class='txe txen' data-hnv='hn06' id='ki06' name='nk06'>:root[data-theme="Paz"]{--lko:#00c853;--co1:#29c72e;}</textarea>
-    <div class='txe txrs' data-hnv='hn06' id='rs06'></div>
-    </div>
-    <div class='csd'>
-    <button class='bco' data-csd='hn06'>COPIAR</button>
-    <button class='bsv' data-csd='hn06'>GUARDAR</button>
-    <button class='bdl' data-csd='hn06'>ELIMINAR</button>
-    </div>
-    </div>
-    </div>
-    <!-- MAYUSCULAS #07-->
-    <div class='mhr' id='mhr07'>
-    <div class='hr07' data-hid='07'>
-    <h2 class='thr'>Convertir mayusculas minusculas online #07</h2>
-    <div class='sct'>
-    <h3>Ingresa tu texto: </h3>
-    <textarea class='txe txen' data-hnv='hn07' id='ki07' name='nk07'>Escribe tu texto para convertir. grrr! 3 </textarea>
-    <button class='btn' id='may'>Mayúsculas</button>
-    <button class='btn' id='min'>Minúsculas</button>
-    <button class='btn' id='mai'>Mayúscula al incio</button>
-    <button class='btn' id='mdp'>Mayúsculas después de Punto</button>
-    <h3>RESULTADO</h3>
-    <textarea class='txe txrs' data-hnv='hn07' id='rs07' name='nr07'></textarea>
-    </div>
-    <div class='csd'>
-    <button class='bco' data-csd='hn07'>COPIAR</button>
-    <button class='bsv' data-csd='hn07'>GUARDAR</button>
-    <button class='bdl' data-csd='hn07'>ELIMINAR</button>
-    </div>
-    </div>
-    </div>
-    <!-- CALCULOMES #08-->
-    <div class='mhr' id='mhr08'>
-    <div class='hr08' data-hid='08'>
-    <h2 class='thr'>Calcular Mes y Día #08</h2>
-    <div class='sct'>
-    <h3>Ingresa tu color: </h3>
-    <label for='fecha0'>Desde:</label>
-    <input id='fecha0' type='text' value='18/08/2024'/>
-    <label for='fechahoy'>Hasta:</label>
-    <input id='fechahoy' readonly='readonly' type='text'/>
-    <button id='fechayes'>Calcular</button>
-    <span>Son: <span id='mtiempo'>
-    </span></span>
-    </div>
-    </div>
-    </div>
-    <!-- IMAGENES #09-->
-    <div class='mhr' id='mhr09'>
-    <div class='hr09' data-hid='09'>
-    <h2 class='thr'>Subir imagenes desde clipboard #09</h2>
-    <div class='sct'>
-    <div class='txe txen pdim' data-hnv='hn09' id='ki09'>Pega aquí las imágenes (Ctrl+V)</div>
-    </div>
-    <div class='dfw'>
-    <div class='csd'>
-    <button class='bco' data-csd='hn09'>COPIAR</button>
-    <button class='bsv' data-csd='hn09'>GUARDAR</button>
-    <button class='bdl' data-csd='hn09'>ELIMINAR</button>
-    </div>
-    <div class='mro dfc'>
-    <span class='dci'></span>
-    <input class='dcv' id='dce' type='text' value='#29c72e'/>
-    <input class='dcv' id='dco' type='color' value='#29c72e'/>
-    </div>
-    </div>
-    </div>
-    </div>
-    <!-- PAINTER #10-->
-    <div class='mhr' id='mhr10'>
-    <div class='hr10' data-hid='10'>
-    <h2 class='thr'>Painter para dibujar online #10</h2>
-    <div class='sct ccvs canvas-container'>
-    <canvas height='700' id='canvas' width='1500'></canvas>
-    <div class='dpn' contenteditable='true' id='textInput'></div>
-    </div>
-    <div class='cvls controls dfc'>
-    <!-- Herramientas -->
-    <div class='cvtl dfc'>
-    <button class='tool-btn active' data-tool='brush'>Pincel</button>
-    <button class='tool-btn' data-tool='selection'>Selección</button>
-    <button class='tool-btn' data-tool='rectangle'>Rectángulo</button>
-    <button class='tool-btn' data-tool='semi-rectangle'>Semi Rectángulo</button>
-    <button class='tool-btn' data-tool='semi-round'>Rect. Redondeado</button>
-    <button class='tool-btn' data-tool='circle'>Círculo</button>
-    <button class='tool-btn' data-tool='text'>Texto</button>
-    <button id='copyBtn'>Copiar</button>
-    <button id='saveBtn'>Guardar</button>
-    <button id='clearBtn'>Limpiar</button>
-    </div>
-    <div class='cvin dfc'>
-    <label>Pincel: <input id='brushSize' type='text' value='5'/></label>
-    <span class='cvpi' data-cvin='10'>10</span>
-    <span class='cvpi' data-cvin='20'>20</span>
-    <span class='cvpi' data-cvin='50'>50</span>
-    <span class='cvpi' data-cvin='100'>100</span>
-    <span class='cvpi' data-cvin='500'>500</span>
-    <span class='cvcp' data-cvin='#1976d2' style='background:#1976d2'></span>
-    <span class='cvcp' data-cvin='#00b300' style='background:#00b300'></span>
-    <span class='cvcp' data-cvin='#ffeb3b' style='background:#ffeb3b'></span>
-    <span class='cvcp' data-cvin='#88ddff' style='background:#88ddff'></span>
-    <span class='cvcp' data-cvin='#ffffff' style='background:#ffffff'></span>
-    <label>Color: <input id='colorPicker' type='color' value='#1976d2'/></label>
-    <label>Fuente:
-        <select id='fontFamily'>
-    <option value='Arial'>Arial</option>
-    <option value='Verdana'>Verdana</option>
-    <option value='Poppins'>Poppins</option>
-    <option value='Rubik'>Rubik</option>
-    <option value='Impact'>Impact</option>
-    <option value='Arial Black'>Arial Black</option>
-    </select>
-    </label>
-    <label>Texto: <input id='textSize' type='text' value='20'/></label>
-    <span class='cvtx' data-cvin='10'>10</span>
-    <span class='cvtx' data-cvin='15'>15</span>
-    <span class='cvtx' data-cvin='20'>20</span>
-    <span class='cvtx' data-cvin='50'>50</span>
-    <span class='cvtx' data-cvin='100'>100</span>
-    <button class='cvbs' id='undoBtn'>Deshacer</button>
-    <button class='cvbs' id='downloadBtn'>Descargar</button>
-    </div>
-    </div>
-    </div>
-    </div>
-    <!-- PANTALLA #011-->
-    <div class='mhr' id='mhr11'>
-    <div class='hr11' data-hid='11'>
-    <h2 class='thr'>Calcular Tamaño de Pantalla Viewport #11</h2>
-    <div class='sct dgc'>
-    <table class='bxs'><tbody>
-    <tr><th class='tbh' colspan='2'>TAMAÑO DE MI PANTALLA - VIEWPORT</th></tr>
-    <tr><th class='ttd'>Ancho</th><td class='vtd wdv'></td></tr>
-    <tr><th class='ttd'>Altura</th><td class='vtd wdh'></td></tr>
-    <tr><th class='ttd'>Es Móvil</th><td class='vtd wdm'></td></tr>
-    <tr><th class='ttd'>Orientación</th><td class='vtd wdo'></td></tr>
-    </tbody></table>
-    <button class='btn up11'> Actualizar</button>
-    </div>
-    </div>
-    </div>
-    <!-- ACERCAPC #20-->
-    <div class='mhr' id='mhr20'>
-    <div class='hr20' data-hid='20'>
-    <h2 class='thr'>Acerca de mi pantalla, navegador online</h2>
-    <div class='sct txc'>
-    <div class='ct20 df3'></div>
-    <button class='upbn up20'>Actualizar</button>
-    </div>
-    </div>
-    </div>
-    <footer class='mfo txc dfc'>
-    <span class='ftx'>Creado con <span data-wicon='corazon'></span> by @wilder.taype 2023 -</span><span class='wty ftx'></span><span class='prt ftx'>| Política de privacidad  |</span><span class='ftx'>Actualizado: </span><span class='wtu ftx'>
-    </span>
-    </footer>
-    <div class='epsa'>
-    <div class='bfl'>
-      <span class="ibf ibfa" data-wicon='screen-on'></span>
-      <span class="ibf" data-wicon='screen-off'></span>
-    </div>
-    <div class='mthemes'>
-    <div class='thm th1' data-tema='Paz|#29C72E'></div>
-    <div class='thm th2' data-tema='Dulce|#FF5C69'></div>
-    <div class='thm th3 mtha' data-tema='Cielo|#0EBEFF'></div>
-    <div class='thm th4' data-tema='Mora|#7000FF'></div>
-    <div class='thm th5' data-tema='Futuro|#21273B'></div>
-    </div>
-    </div>
-    </div>
-    <!--DIOS ES BUENO[END]-->
+<!--DIOS ES BUENO[START V22 788421146945776005]-->
+<header class='hd'>
+<nav>
+<div class='wdp dfw'>
+<a aria-label='Logo' class='mlg' href='#'>Codewil</a>
+<div class='nvy'>
+<a aria-label='GENERAL' class='bhr bha' href='#general'>GENERAL</a>
+<a aria-label='ENTITIES' class='bhr' href='#entities'>ENTITIES</a>
+<a aria-label='PRETTIER' class='bhr' href='#prettier'>PRETTIER</a>
+<a aria-label='MINIFIER' class='bhr' href='#minifier'>MINIFIER</a>
+<a aria-label='NOTEPAD' class='bhr' href='#notepad'>NOTEPAD</a>
+<a aria-label='CONTADOR' class='bhr' href='#contador'>CONTADOR</a>
+<a aria-label='COLORES' class='bhr' href='#color_notepad'>COLORES</a>
+<a aria-label='MAYUSCULAS' class='bhr' href='#mayusculas'>MAYUSCULAS</a>
+<a aria-label='IMAGENES' class='bhr' href='#imagenes'>IMAGENES</a>
+<a aria-label='PAINTER' class='bhr' href='#painter'>PAINTER</a>
+<a aria-label='ACERCAPC' class='bhr' href='#acerca_pc'>ACERCAPC</a>
+</div>
+</div>
+</nav>
+</header>
+<main class='miwb wdp psr'>
+<!--GENERAL VISUALIZACIÓN-->
+<div class='wgen mhra' id='general'>
+<div class='dfcc txc' id='titulos'>
+<h1>Encuentra mejores apps para desarrollo web, movíl y diseño</h1>
+<input class='insh' id='ish' placeholder='Buscar herramientas disponibles: ' type='text'/>
+<div class='gbts dfaw'></div><!--BOTONES DEBAJO BUSQUEDA-->
+</div>
+</div>
+<!--MIS HERRAMIENTAS[START]-->
+<div class='mtoo txc'>
+<!-- ENTITIES #01-->
+<div class='mhr mhra' id='entities'>
+<h2 class='sbt'>Reemplazar mis Entidades html xml #01</h2>
+<div class='hct h01' data-hid='01'>
+<div class='htop' id='ht01'>
+<span class='oph opha'><i class='wicon wi-check-on'></i>Todo</span>
+<label for='amp'>
+<input checked='checked' class='inx' id='amp' type='checkbox'/><span class='oph'>Amp&</span>
+</label>
+<label for='less'>
+<input checked='checked' class='inx' id='less' type='checkbox'/><span class='oph'>Less<</span>
+</label>
+<label for='greater'>
+<input checked='checked' class='inx' id='greater' type='checkbox'/><span class='oph'>Greater></span>
+</label>
+<label for='apos1'>
+<input class='inx' id='apos1' type='checkbox'/><span class='oph'>Apost '</span>
+</label>
+<label for='apos2'>
+<input class='inx' id='apos2' type='checkbox'/><span class='oph'>Comillas "</span>
+</label>
+</div>
+<textarea class='txe txen' id='ki01' name='namx'>Hola esto es un ejemplo muy genial </textarea>
+<button aria-label='convertidor1' class='hbt tenti'>Convertir a Entidades</button>
+<button aria-label='convertidor2' class='hbt tnorm'>Convertir a normal </button>
+<h3 class='hms hmsg'>Resultado:</h3>
+<textarea class='txe txrs hr01' id='rs01' name='namx'></textarea>
+<div class='btt copy save delete' data-btt='hr01'></div>
+</div>
+</div>
+<!-- PRETTIER #02-->
+<div class='mhr mhra' id='prettier'>
+<h2 class='sbt'>Prettier del html, css y js Online #02</h2>
+<div class='hct h02' data-hid='02'>
+<div class='htop' id='ht02'>
+<i class='wicon wi-info' title='HTML y JS - LEGIBLE: Funciona muy bien en archivos muy grandes'></i>
+<label for='plegible'>
+<input checked='checked' class='inx' id='plegible' name='prnm' type='radio'/><span class='oph'>Legible</span>
+</label>
+<label for='pmpro'>
+<input class='inx' id='pmpro' name='prnm' type='radio'/><span class='oph'>Profesional</span>
+</label>
+</div>
+<textarea class='txe txen' id='ki02' name='namx'>body{love:good;amor:love}</textarea>
+<button aria-label='Prettier1' class='hbt phtml'>Prettier HTML</button>
+<button aria-label='Prettier2' class='hbt pcss'>Prettier CSS</button>
+<button aria-label='Prettier3' class='hbt pjs'>Prettier JS</button>
+<h3 class='hms hmsg'>Resultado:</h3>
+<textarea class='txe txrs hr02' id='rs02' name='namx'></textarea>
+<div class='btt copy save delete' data-btt='hr02'></div>
+</div>
+</div>
+<!-- MINIFIER #03-->
+<div class='mhr mhra' id='minifier'>
+<h2 class='sbt'>Minifica tu codigo de HTML, CSS, JS #03</h2>
+<div class='hct h03' data-hid='03'>
+<div class='htop' id='ht03'>
+<i class='wicon wi-info' title='JS NORMAL: Funciona muy bien en archivos muy grandes'></i>
+<label for='minormal'><input class='inx' id='minormal' name='minm' type='radio'/><span class='oph'>Normal</span></label>
+<label for='mipro'><input checked='checked' class='inx' id='mipro' name='minm' type='radio'/><span class='oph'>Profesional</span></label>
+<label for='miultra'><input class='inx' id='miultra' name='minm' type='radio'/><span class='oph'>Ultra</span></label>
+</div>
+<textarea class='txe txen' id='ki03' name='namx'>/* Pega tu código aquí */</textarea>
+<button aria-label='Minifica1' class='hbt mhtml'>Minifica HTML</button>
+<button aria-label='Minifica2' class='hbt mcss'>Minifica CSS</button>
+<button aria-label='Minifica3' class='hbt mjs'>Minifica JS</button>
+<h3 class='hms hmsg'>Resultado:</h3>
+<textarea class='txe txrs hr03' id='rs03' name='namx'></textarea>
+<div class='btt copy save delete' data-btt='hr03'></div>
+</div>
+</div>
+<!-- NOTEPAD #04-->
+<div class='mhr' id='notepad'>
+<h2 class='sbt'>Notepad TEXTO Y HTML #04</h2>
+<div class='hct h04' data-hid='04'>
+<div class='htop' id='ht04'>
+<label for='ntpd'><input class='inx' id='ntpd' name='ntnm' type='radio'/><span class='oph'>Notepad</span></label>
+<label for='ntpro'><input checked='checked' class='inx' id='ntpro' name='ntnm' type='radio'/><span class='oph'>Notepad Pro</span></label>
+<label for='ntdev'><input class='inx' id='ntdev' name='ntnm' type='radio'/><span class='oph'>Notepad dev</span></label>
+</div>
+<textarea class='txe txen npd' id='ki041' name='namx'>Escribe texto 1</textarea>
+<textarea class='txe txen npd npda' id='ki042' name='namx'>Escribe texto 2</textarea>
+<div class='txe txen txed npd' contenteditable='true' id='ki043'>Escribe texto 3</div>
+<div class='btt copy save delete' data-btt='hr04'></div>
+</div>
+</div>
+<!-- CONTADOR #05-->
+<div class='mhr' id='contador'>
+<h2 class='sbt'>Contador de palabras, caracteres y párrafos #05</h2>
+<div class='hct h05' data-hid='05'>
+<div class='htop' id='ht05'>
+<h3 class='hms'>Entrada del texto</h3>
+</div>
+<textarea class='txe txen' id='ki05' name='namx'>Ingresa tu texto en el siguiente</textarea>
+<div class='hms dfaw dibts' id='rb05'>
+<span class='dbtx cdpl'>Palabras: </span>
+<span class='dbtx cdcs'>Caracteres (sin espacios): </span>
+<span class='dbtx cdcc'>Caracteres (con espacios): </span>
+<span class='dbtx cdpr'>Párrafos: </span>
+<span class='dbtx cdln'>Líneas: </span>
+</div>
+<div class='btt copy save delete' data-btt='hr05'></div>
+</div>
+</div>
+<!-- COLORES #06-->
+<div class='mhr' id='color_notepad'>
+<h2 class='sbt'>Notepad colores desde Textarea hacia display plano #06</h2>
+<div class='hct h06' data-hid='06'>
+<div class='htop' id='ht06'>
+<h3 class='hms'>Entrada del texto</h3>
+</div>
+<textarea class='txe txen' id='ki06' name='namx'>:root[data-theme="Paz"]{--lko:#00c853;--co1:#29c72e;}</textarea>
+<h3 class='hms'>Resultado:</h3>
+<div class='txe txrs' data-hnv='hn06' id='rs06'></div>
+<div class='btt copy save delete' data-btt='hr06'></div>
+</div>
+</div>
+<!-- MAYUSCULAS #07-->
+<div class='mhr' id='mayusculas'>
+<h2 class='sbt'>Convertir mayusculas minusculas online #07</h2>
+<div class='hct h07' data-hid='07'>
+<div class='htop' id='ht07'>
+<label for='myauto'><input class='inx' id='myauto' name='mynm' type='checkbox'/><span class='oph'>Auto conversión</span></label>
+</div>
+<textarea class='txe txen' id='ki07' name='namx'>Resultado</textarea>
+<div class='hms'>
+<button aria-label='Formato1' class='hbt frmay'>Mayúsculas</button>
+<button aria-label='Formato2' class='hbt frmin'>Minúsculas</button>
+<button aria-label='Formato3' class='hbt frdp'>Mayúscula incio</button>
+<button aria-label='Formato3' class='hbt frpro'>Formato Profesional</button>
+</div>
+<textarea class='txe txrs hr07' id='rs07' name='namx'></textarea>
+<div class='btt copy save delete' data-btt='hr07'></div>
+</div>
+</div>
+<!-- IMAGENES #08-->
+<div class='mhr' id='imagenes'>
+<h2 class='sbt'>Subir imagenes desde clipboard #08</h2>
+<div class='hct h08' data-hid='08'>
+<div class='sct'>
+<div class='mro dfc'>
+<span class='dci'></span>
+<input class='dcv' id='dce' type='text' value='#29c72e'/>
+<input class='dcv' id='dco' type='color' value='#29c72e'/>
+</div>
+<div class='txe txen pdim' data-hnv='hn08' id='ki08'>Pega aquí las imágenes (Ctrl+V)</div>
+</div>
+<div class='btt copy save delete' data-btt='hr08'></div>
+</div>
+</div>
+<!-- PAINTER #09-->
+<div class='mhr' id='painter'>
+<h2 class='sbt'>Painter para dibujar online #09</h2>
+<div class='hct h09' data-hid='09'>
+<div class='sct ccvs canvas-container'>
+<canvas height='700' id='canvas' width='1500'></canvas>
+<div class='dpn' contenteditable='true' id='textInput'></div>
+</div>
+<div class='cvls controls '>
+<!-- Herramientas -->
+<div class='cvtl'>
+<button class='tool-btn active' data-tool='brush'>Pincel</button>
+<button class='tool-btn' data-tool='selection'>Selección</button>
+<button class='tool-btn' data-tool='rectangle'>Rectángulo</button>
+<button class='tool-btn' data-tool='semi-rectangle'>Semi Rectángulo</button>
+<button class='tool-btn' data-tool='semi-round'>Rect. Redondeado</button>
+<button class='tool-btn' data-tool='circle'>Círculo</button>
+<button class='tool-btn' data-tool='text'>Texto</button>
+<button id='copyBtn'>Copiar</button>
+<button id='saveBtn'>Guardar Web</button>
+<button class='cvbs' id='undoBtn'>Deshacer</button>
+</div>
+<div class='cvin dfc'>
+<label>Pincel: <input id='brushSize' type='text' value='5'/></label>
+<span class='cvpi' data-cvin='10'>10</span>
+<span class='cvpi' data-cvin='20'>20</span>
+<span class='cvpi' data-cvin='50'>50</span>
+<span class='cvpi' data-cvin='100'>100</span>
+<span class='cvpi' data-cvin='500'>500</span>
+<span class='cvcp' data-cvin='#1976d2' style='background:#1976d2'></span>
+<span class='cvcp' data-cvin='#00b300' style='background:#00b300'></span>
+<span class='cvcp' data-cvin='#ffeb3b' style='background:#ffeb3b'></span>
+<span class='cvcp' data-cvin='#88ddff' style='background:#88ddff'></span>
+<span class='cvcp' data-cvin='#ffffff' style='background:#ffffff'></span>
+<label>Color: <input id='colorPicker' type='color' value='#1976d2'/></label>
+<label>Fuente:
+<select id='fontFamily'>
+<option value='Arial'>Arial</option>
+<option value='Verdana'>Verdana</option>
+<option value='Poppins'>Poppins</option>
+<option value='Rubik'>Rubik</option>
+<option value='Impact'>Impact</option>
+<option value='Arial Black'>Arial Black</option>
+</select>
+</label>
+<label>Texto: <input id='textSize' type='text' value='20'/></label>
+<span class='cvtx' data-cvin='10'>10</span>
+<span class='cvtx' data-cvin='15'>15</span>
+<span class='cvtx' data-cvin='20'>20</span>
+<span class='cvtx' data-cvin='50'>50</span>
+<span class='cvtx' data-cvin='100'>100</span>
+<button id='clearBtn'>Limpiar</button>
+<button class='cvbs' id='downloadBtn'>Descargar</button>
+</div>
+</div>
+</div>
+</div>
+<!-- PANTALLA #10-->
+<div class='mhr' id='acerca_pc'>
+<h2 class='sbt'>Acerca de mi PC #10</h2>
+<div class='hct h10' data-hid='10'>
+<div class='sct txc dfcc'>
+<div class='ct10 df3'></div>
+<button class='upbn up10'>Actualizar</button>
+</div>
+</div>
+</div>
+</div>
+<div class='abwc psa dpn dfcc'>
+<b>Acerca de CodeWil</b>
+<p>CodeWil es un servicio de optimización de código que ayuda a mejorar la calidad y eficiencia del desarrollo web. Nos especializamos en hacer el código más <i>corto, limpio y funcional</i> sin perder rendimiento. Desde la conversión de entidades HTML hasta la minificación avanzada de CSS y JS, CodeWil ofrece herramientas esenciales para cualquier desarrollador. Nuestras optimizaciones son desarrolladas por mi <a class='ftx lkme' href='https://wtaype.github.io/' target='_blank'>@wilder.taype</a>, con el objetivo de facilitar el trabajo de los programadores y mejorar sus flujos de desarrollo.</p>
+<p><a href='https://wtaype.github.io/codewil/v20/' target='_blank'>v20 - Versión Inicial</a></p>
+<p><a href='https://wtaype.github.io/codewil/v21/' target='_blank'>v21 - Versión con mejoras en la web</a></p>
+<b>Política de Privacidad y Seguridad - Cookies</b>
+<p>En CodeWil, priorizamos la privacidad y seguridad de nuestros usuarios. Todas las herramientas funcionan directamente en el navegador, evitando la necesidad de enviar datos a servidores externos. No recopilamos información personal ni utilizamos cookies de rastreo. Solo empleamos almacenamiento local para recordar configuraciones y preferencias, asegurando así una experiencia segura y personalizada. No compartimos datos con terceros ni los utilizamos con fines publicitarios.</p>
+<button aria-label='ENTENDIDO' class='abwok bts'>ENTENDIDO</button>
+</div>
+</main>
+<footer class='foo txc dfc'>
+<span>Creado con<span class='wicon wi-corazon'></span>by @wilder.taype 2024 -</span><span class='wty'></span><span class='abw'>| Acerca del app |</span><span>actualizado:</span><span class='wtu'>
+</span>
+</footer>
+<!--DIOS ES BUENO[END]-->
 <div class='no-items section' id='foooo' name='foooo'></div>
-<script defer="defer">
+<script defer='defer'>
 function mijQuery(){window.jQuery&&window.$&&!window.done?(window.done=1,$(function(){ 
-//DIOS ES MI SALVADOR[START V20 3385357715164968503] 
-//MI COOKIES - LOCALSTORAGE 
-!function(e,t){typeof module=="object"&&module.exports?module.exports=t():e.Cookies=t()}(this,()=>({set:(e,t,n={})=>{try{n.expires&&(n.expires=+n.expires?new Date(Date.now()+864e5*n.expires):n.expires);t&&t.length>4000?(localStorage.setItem(e,t),document.cookie=`${e}_useLS=true;expires=${n.expires}`):document.cookie=e+"="+t+Object.entries(n).map(([e,t])=>t?";"+e+(t===!0?"":"="+t):"")}catch(e){}},get:e=>{try{return document.cookie.includes(e+"_useLS=true")?localStorage.getItem(e):(document.cookie.match("(^| )"+e+"=([^;]*)")||[])[2]}catch(e){return""}},remove:e=>{document.cookie=e+"=;expires=Thu, 01 Jan 1970";document.cookie=e+"_useLS=;expires=Thu, 01 Jan 1970";localStorage.removeItem(e)}}));
+//DIOS ES PROTECTOR - RECURSOS [START MIJQUERY] 
+let wicon ="https://cdn.jsdelivr.net/gh/wtaype/wicon@v2.28/wicon.min.js";
+let mstyles = '@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"); ';
+$('head').append(`<style>${mstyles}</style><script src="${wicon}"><\/script>`);
+//MI LOCALSTORAGE 
 function savels(key,value,hours){localStorage.setItem(key, JSON.stringify({value:value,expiry:Date.now()+hours*3600000}))};function getls(key){var item=JSON.parse(localStorage.getItem(key));if(!item||Date.now()>item.expiry){localStorage.removeItem(key);return null}return item.value};function removels(key){localStorage.removeItem(key)};
+function gosave(nm,vl){$(window).on('beforeunload',()=> savels(nm,vl,168))} //gosave('fondo', $('html').attr('style')) 
+function getsave(sv,fn){const mvl=getls(sv);if (mvl) fn(mvl)}//getsave('stema',(vl)=> $('body').addClass(vl));
+function gosaves(se,attr,fn){$(window).on('beforeunload',function(){$(se).each(function(){savels($(this).attr(attr),fn($(this)),168);})})}//gosaves('input','id',($e)=> $e.val());
+function getsaves(se,attr,fn){$(se).each(function(){const val=getls($(this).attr(attr));if(val)fn($(this),val);})}//getsaves('input','id',($e,v)=> $e.val(v));
 // FUNCIONES GENIALES 
 $('.wty').text(new Date().getFullYear());
 $('.wtu').text(new Date().toLocaleString())
-function adr(a,b){$(a).addClass(b).siblings().removeClass(b)}
-function atc(x,y){$(x).addClass(y).delay(2800).queue(q=>$(x).removeClass(y).dequeue())}
-function atx(x,y,z){$(x).text(y).addClass('btha').delay(1800).queue(q=>$(x).text(z).removeClass('btha').dequeue())}
-let tmx;function atxs(tis,cls,txa,txb){$(tis).text(txa).addClass('btha');clearTimeout(tmx), tmx=setTimeout(()=>$(cls).text(txb).removeClass('btha'),800)}
-async function mcopy(tsc,clc){clearTimeout(tmx);tmx=setTimeout(async()=>{await navigator.clipboard.writeText($(tsc).val());atxs(tsc,clc,'&#161;COPIADO!','COPIAR')},1000)}
-// ACTUALIZANDO NAVS LINKS
-$(function(){
-  $('.bhr').click(function(){
-    adr(this,'bha');adr('#mhr'+$(this).data('ihr'),'hra')
-  });const lx=window.location.hash; if(lx){let nx=lx.slice(-2);adr('.bh'+nx, 'bha'); adr('#mhr'+nx, 'hra')}
-});  
-// ACTUALIZANDO GENERAL INDEX #01
-$('[data-shwg]').click(function(){
-  $(this).toggleClass('shwa');
-  const id = $(this).data('shwg');
-  if($(this).hasClass('shwa')){
-    $('.hr'+id).detach().appendTo('.gresult'); //TRAENDO
-  }else{
-    $('.hr'+id).detach().appendTo('#mhr'+id); //TRAENDO
-  }
-});
-$('[data-ihr]').click(function(){
-  const id = $(this).data('ihr');
-  $('.hr'+id).detach().appendTo('#mhr'+id); //REGRESANDO
-  $(`[data-shwg="${$(this).data('ihr')}"]`).removeClass('shwa');
-});
-$('.bfl').click(function(){
-  $(this).find('.ibf.ibfa').removeClass('ibfa').siblings().addClass('ibfa')
- $('.mhd,.mfo').toggleClass('dpn'); $('.mct').toggleClass('mwb')
-}); //Para hacer full screen
-
+function adrm(se,cl){$(se).addClass(cl).siblings().removeClass(cl)}
+function adtc(se,cl){$(se).addClass(cl);setTimeout(()=>{$(se).removeClass(cl)},3000)}
+function adtx(se,tx){let o=$(se).text();$(se).text(tx).delay(1800).queue(q=>$(se).text(o).dequeue())}
+function adtm(se,cl,ti,tf){$(se).text(ti).addClass(cl).delay(1800).queue(q=>$(se).text(tf).removeClass(cl).dequeue())} 
+function adtb(se,ti,tf){$(se).text(ti).addClass('bta').delay(1000).queue(q=>$(se).text(tf).removeClass('bta').dequeue())} 
   
-// GUARDANDO ANTES DE CARGAR
-$(window).on('beforeunload',function(){
-  let hrs = $('.gresult>div').map((_,me)=>me.className).get();
-  savels('shw_general',hrs,180);
+// GENERAL BOTONES TOOLS COPY-SAVE-DELETE   
+$('.btt').each(function(){
+  let $bt= $(this), id= $bt.data('btt');
+  let btts= $.map([{cl:'copy',tx:'COPIAR'},{cl:'save',tx:'GUARDAR'},{cl:'delete',tx:'ELIMINAR'}], ({cl, tx})=> 
+            $bt.hasClass(cl)? `<button class="bt${cl[0]}" data-btt="${id}">${tx}</button>`: '').join('');
+  $bt.append(btts);
+});
+  
+// ACTUALIZANDO BOTONES BUSQUEDA
+$('.bhr').each(function(){
+  let $bt= $(this), id= $bt.data('btt');
+  let btts= $.map([{cl:'copy',tx:'COPIAR'},{cl:'save',tx:'GUARDAR'},{cl:'delete',tx:'ELIMINAR'}], ({cl, tx})=> 
+            $bt.hasClass(cl)? `<button class="bt${cl[0]}" data-btt="${id}">${tx}</button>`: '').join('');
+  $bt.append(btts);
+});
+  
+// ACERCAWB
+$('.abw, .abwok').click(function() {
+  $('.abwc').toggleClass('dpn');
+});
+  
+// BOTONES DEBAJO BUSQUEDA 
+$('.gbts').append(
+  $.map($('.bhr').slice(1),lk=> `<button data-gid="${lk.getAttribute('href')}">${lk.textContent}</button>`).join('')
+);
+
+// ACTUALIZANDO LINKS 
+let lkh=window.location.hash;
+adrm(`a[href="${lkh}"]`,'bha'); //Botones .bhr
+adrm(lkh,'mhra');  //Actualizando herramienta .mhr.mhra
+
+//SINCRONIZACIÓN AUTOMATICA
+function gsync(){
+  let btna= $('.mhra').map(function(){
+    return '[data-gid="#'+this.id+'"]'; 
+  }).get(); //Actualiza herramientas [#general, etc]
+  $('[data-gid]').removeClass('gbta'); //Eliminar primero
+  $(btna.join(', ')).addClass('gbta'); //Actualizar clases
+}gsync();
+  
+// ACTUALIZANDO NAVS 
+$('.bhr').click(function(){
+  let lkn = $(this).attr('href'); //e. #general
+  adrm(this,'bha'); //Para css bordes
+  adrm(lkn,'mhra'); //Para mostrar/ocultar herramientas
+  if(lkn=='#general')$('#entities,#prettier,#minifier').toggleClass('mhra');//Para general
+  gsync();//Sync yes   
+});
+  
+// BUSCADOR DE APPS 
+$('.insh').attr('placeholder','Buscar herramientas disponibles: '+$('.mhr').length)
+$('.insh').on('input',function(){
+  let shin=$(this).val().toLowerCase(); 
+  $('.mhr').each(function(){ 
+   $(this).toggleClass('mhra',$(this).find('.sbt').text().toLowerCase().includes(shin));
+  }); //Actualizando búsqueda
+  if(shin=='dev') $('#entities,#prettier,#minifier').toggleClass('mhra'); //Pers. dev
+  if(shin=='img') $('#imagenes').toggleClass('mhra'); //Pers. img
+  if(shin=='pd') $('#notepad').toggleClass('mhra'); //Pers. notepad
+  gsync();//Sync yes 
+});
+  
+// ACTUALIZANDO BOTONES GENERAL
+$('[data-gid]').click(function(){
+  let lkv = $(this).data('gid');
+  adrm(`[data-gid="${lkv}"]`, 'gbta'); //Actualizando css botones
+  $(lkv).toggleClass('mhra'); //Actualizando herramientas
+  gsync();//Sync yes
 }); 
-$(getls('shw_general')||['hr02','hr03','hr04']).each(function(){
-  $('.'+this).detach().appendTo('.gresult');
-  $(`[data-shwg="${this.slice(-2)}"]`).addClass('shwa');
-})
-
-// GUARDANDO DATOS LOCALSTORAGE
-function get(el){const $el=$(el),$elc=$el.closest('[data-hid]');return {$el: $el,$elc: $elc,id: $elc.data('hid')}}//Para obtener valores rapidos
-function gsave() {   
-  // PARA TIEMPO DEL TEXTO: (tx=texto)(tm=tiempo)(el=elemento)(elc=ele contenedor)(id=id)(nt=notificacion)
-  const ntf=(el,tx1,tx2,atc,tm=1500)=>el && $(el).closest('[data-hid]').find(atc).each((_,nt)=>$(nt).text(tx1).addClass('btha').delay(tm).queue(q=>$(nt).text(tx2).removeClass('btha').dequeue()));
-  // PARA OBTENER VALORES LOCALSTORAGE:(ls=localStorage)(vl=valor)
-  $('.txen').each((_,el)=>{const {$el,id}=get(el),vl=getls($el.data('hnv'));vl && ($el.is('textarea')? $el.val(vl):$el.html($el.is('.pdim')? `<img src="${vl}">`:vl))});  
-  // PARA GUARDAR ELIMINAR COPIAR LOCALSTORAGE: (ac=accion)(vl=valor)(cp=copiar)
-  return {
-    save: (el,tx1,tx2,ac,tm)=>{const {$elc,id,$el}=get(el);savels(`hn${id}`,$elc.find('.txen').is('textarea')?$el.val(): $elc.find('.pdim')?$elc.find('img').attr('src') :$el.html(),180);ntf(el,tx1,tx2,ac,tm)},
-    sdel: (el,tx1,tx2,ac,tm)=>{const {$elc,id}=get(el);removels(`hn${id}`,'');$elc.find('.txen').val('').html('');ntf(el,tx1,tx2,ac,tm)},
-    mcopy:(el,tx1,tx2,ac,tm,tac=500)=>{const{$el,$elc}=get(el);if($el.data('copying'))return;clearTimeout($el.data('tping'));const cp=$elc.find('.txe').last().val();$el.data('tping',setTimeout(async()=>{if(!cp?.match(/^\s*$/))try{$el.data('copying',!0);await navigator.clipboard.writeText(cp);ntf(el,tx1,tx2,ac,tm)}catch(e){}finally{$el.data('copying',!1)}},tac))},
-}}
-// PARA ACTUALIZAR FUNCIONES 
-const sb = gsave();
-$('.bsv').click(function(){sb.save(this, 'GUARDANDO', 'GUARDADO', '.bsv', 100)});
-$('.bdl').click(function(){sb.sdel(this, 'ELIMINANDO', 'ELIMINADO', '.bdl', 100)});
-$('.pdim').on('paste click',function(){sb.save(this, 'GUARDANDO', 'GUARDADO', '.bsv', 500)});
-$('.txe').on('input', function() { 
-  sb.save(this, 'GUARDANDO', 'GUARDADO', '.bsv', 1500);
-  sb.mcopy(this,'COPIADO','COPIAR','.bco',400,500);
-});
-$('.bco').click(function(){ copied(this)});
-function copied(dte){sb.mcopy(dte,'COPIADO','COPIAR','.bco',1000,20)}
   
-$('.txen').on('paste change',function(){
-  const{$el,$elc,id}=get(this); $elc.find('.txrs').val('');
+// PARA COPIAR - GUARDAR - ELIMINAR
+  function mcopy(tis){
+    let $bc= $($(tis).closest('[data-btt]'));
+    let $bt= `hr${$(tis).closest('.hct').data('hid')}`; //hr01
+    navigator.clipboard.writeText($('.'+$bt).val()); $('.'+$bt).focus().select(); //Valor copiado
+    $(tis).is('.hbt')?(adtb($(`.btc[data-btt="${$bt}"]`),'COPIADO','COPIAR')):(adtb($bc,'COPIADO','COPIAR')); //Notif.
+  } // Funcion para copiar
+  $(document).on('click','.hbt',function(){mcopy(this)});
+  $(document).on('click','.btc',function(){mcopy(this)});
+
+// GUARDANDO TEXTAREA, INPUT ANTES QUE CARGUE 
+$(document).on('click','.bts',function(){adtb(this,'GUARDANDO','GUARDADO')});
+gosaves('textarea,input,.txed','id',($e)=> $e.is('.txed')? $e.html(): $e.val());
+getsaves('textarea,input,.txed','id',($e,v)=> $e.is('.txed')? $e.html(v): $e.val(v));
+
+// ELIMINANDO DATOS TXEN
+function godel(tis){
+  let id = $(tis).closest('.hct').data('hid'); //01 - ki01 - rs01
+  $('#rs'+id).val('').html(''); //Eliminado solo txen
+  $(tis).is('.btd')? (adtb(`.btd[data-btt="hr${id}"]`,'ELIMINANDO','ELIMINADO'), $(`#ki${id}, #rs${id}`).val('').html('')): ''; //Eliminado txen, txrs
+}
+$('.txen').on('input',function(){godel(this)});
+$(document).on('click','.btd',function(){godel(this)});
+// CHECKBOX PERSONALIZADO AUTOMATICO
+function checkbx(){
+  $('[type="checkbox"],[type="radio"]').each(function(){
+    let se = $(this).next('.oph');
+    se.html(`<i class="wicon wi-check-${this.checked ? 'on' : 'off'}"></i>${se.text()}`);
+  });
+}checkbx(); $('[type="checkbox"],[type="radio"]').on('change', checkbx);
+// CHECKBOX SPAN TEXT LABEL> .oph   
+$('.oph').on('click',function(e){
+  let check= $(this).prev('[type="checkbox"],[type="radio"]');
+  let ischeck= !check.prop('checked');  
 });
-//ENTITIES #02
-$(function(){
-  const mls={
-    0: {'&':'&amp;','<':'&lt;'},
-    1: {'&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&#39;':"'"}
-  }; 
-  const mfc = mdf => $('#rs02').val(Object.entries(mls[mdf]).reduce((t,[a,b])=> t.replace(new RegExp(a.replace(/[-\/\\^$*+?.()|[\]{}]/g,'\\$&'),'g'), b), $('#ki02').val()
-  ));mfc(1);    
-  $('#bnor').click(function() {
-    mfc(1);
-    copied(this);
-  });
-
-  $('#bent').click(function() {
-    mfc(0);
-    copied(this);
-  });
-
-  $('#ki02').on('input', function() {
-    mfc(1);
-  });
+// CHECK - UNCHECK ALL 
+$('.opha').click(function() {
+  let sked = $(this).closest('.htop').find('.inx'); 
+  let skedall= sked.filter(':checked').length !== sked.length;
+  sked.prop('checked', skedall).trigger('change');
 });
-//PRETTIER #03
-$(function(){
-    const prettify = {
-        html: html => html
-            .replace(/<(pre|textarea|script|style)[^>]*>[\s\S]*?<\/\1>/gi, m => m.replace(/\n/g, '&#10226;'))
-            .replace(/></g, '>\n<')
-            .split('\n')
-            .map((line, _, lines) => {
-                line = line.trim();
-                if (!line) return '';
-                const nivel = lines.slice(0, _).filter(l => 
-                    l.trim().startsWith('<') && !l.trim().startsWith('</') && 
-                    !l.trim().endsWith('/>') && !l.trim().endsWith('>')).length;
-                return ' '.repeat(line.startsWith('</') ? Math.max(0, nivel - 1) : nivel) + line;
-            })
-            .filter(Boolean)
-            .join('\n')
-            .replace(/&#10226;/g, '\n')
-            .trim(),
-        css: css => css
-            .replace(/;\s*/g, ';\n ') 
-            .replace(/\s*{\s*/g, '{\n ') 
-            .replace(/\s*}\s*/g, '\n}\n')
-            .replace(/:\s*/g, ':')
-            .replace(/\n\s*\n/g, '\n')
-            .trim(),
-
-        js: js => js
-            .replace(/([^;{}\n])\s*(}|\n|$)/g, '$1;$2')
-            .replace(/(["'`])(?:(?=(\\?))\2.)*?\1/g, m => m.replace(/\n/g, '&#10226;'))
-            .replace(/\s*{\s*/g, '{\n')
-            .replace(/\s*}\s*/g, '\n}\n')
-            .replace(/;\s*/g, ';\n')
-            .split('\n')
-            .map(line => {
-                line = line.trim();
-                if (!line) return '';
-                const nivel = line === '}' ? 0 : 1;
-                return ' '.repeat(nivel) + line;
-            })
-            .filter(Boolean)
-            .join('\n')
-            .replace(/&#10226;/g, '\n')
-            .replace(/\n\s*\n/g, '\n')
-            .trim()
-    };   
-    $('#phtml').click(function() {
-      $('#rs03').val(prettify.html($('#ki03').val()));
-      copied(this);
-    });
-
-    $('#pcss').click(function() {
-      $('#rs03').val(prettify.css($('#ki03').val()));
-      copied(this);
-    });
-
-    $('#pjs').click(function() {
-      $('#rs03').val(prettify.js($('#ki03').val()));
-      copied(this);
-    });
+// HERRAMIENTA ENTITIES #01
+let lsenti={
+  '#amp': {entidad: '&amp;', caracter: '&' },
+  '#less': {entidad: '&lt;', caracter: '<' },
+  '#greater': {entidad: '&gt;', caracter: '>' },
+  '#apos1': {entidad: '&#39;', caracter: "'" },
+  '#apos2': {entidad: '&quot;', caracter: '"' }
+}; //Lista para entidad y caracter
+ // FUNCION ENTIDADES
+function henti(toen){
+  let activos= $('#ht01 .inx:checked').map((_,e)=> '#'+e.id).get(); //Los activos
+  let $txe=$('#ki01').val(); //Entrada 
+  activos.forEach(function(id){
+   let {entidad, caracter} = lsenti[id] || {};
+   if(entidad && caracter) $txe= $txe.replaceAll(toen=='tnorm'?entidad:caracter,toen=='tnorm'?caracter:entidad); 
+  }); $('#rs01').val($txe); // Salida 
+}
+// PARA CONVERTIR NORMAL - ENTIDADES, ENTIDADES - NORMAL
+$('.tnorm').on('click',()=> henti('tnorm'));
+$('.tenti').on('click',()=> henti('tenti'));
+  
+// HERRAMIENTA PRETTIER #02
+const lspretti = {
+  html: (html,mode)=> {
+    let indent = mode === 'pro' ? '\t' : ''; // Definir modo PRO, tabulador 
+    let nivel = 0; //Para detectar la linea y dar espacio        
+    return html
+    .replace(/<(pre|textarea|script|style)[^>]*>[\s\S]*?<\/\1>/gi, m => m.replace(/\n/g, '&#10226;'))
+    .replace(/>\s*</g, '>\n<') // >< Agrega saltos de línea entre etiquetas
+    .split('\n')
+    .map(line=> {
+        line = line.trim();
+        if(!line) return '';
+        if(line.match(/^<\/[^>]+>/)) nivel--;
+        nivel = Math.max(0, nivel); //Asegurando que no sea negativo
+        let result = indent.repeat(nivel) + line;                
+        if (line.match(/^<[^\/][^>]*>/) && !line.match(/\/>$/) && !line.match(/^<(img|br|hr|input|link|meta)\s[^>]*>$/i)) {
+            if (!line.match(/<\/[^>]+>$/)) nivel++;
+        }                
+        return result;
+    })
+    .join('\n')
+    .replace(/&#10226;/g, '\n')
+    .trim(); //Limpiar espacio blanco antes/despues
+  },      
+  css: (css,mode)=> {
+    let indent = mode === 'pro' ? '  ' : ''; // 2 espacios para pro
+    let braceSpace = mode === 'pro' ? ' {' : '{'; //Espacion antes de {
+    let propertyColon = mode === 'pro' ? ': ' : ':'; // Espacio dos puntos en pro
+    let selectorComma = mode === 'pro' ? ', ' : ','; // Espacio coma en selectores en pro
+    return css
+    .replace(/\/\*[\s\S]*?\*\//g, match => match.replace(/\n/g, '&#10226;')) // Mantener comentarios
+    .replace(/;\s*/g, ';\n')
+    .replace(/\s*{\s*/g, braceSpace + '\n')
+    .replace(/\s*}\s*/g, '\n}\n')
+    .split('\n')
+    .map(line=> {
+        line = line.trim();
+        if (!line) return '';            
+        if (mode === 'pro' && line.includes(',') && line.endsWith('{')){
+            let parts = line.split('{');
+            parts[0] = parts[0].replace(/,/g, selectorComma);
+            line = parts.join('{');
+        }            
+        if(mode === 'pro' && line.includes(':') && !line.endsWith('{')) (line = line.replace(/\s*:\s*/g, propertyColon))
+        if(line.endsWith('{')){return line} 
+        else if(line === '}'){return line}
+        else if(!line.startsWith('}')){return indent + line} 
+        else{return line}
+    })
+    .join('\n')
+    .replace(/&#10226;/g, '\n')
+    .trim();
+  }, 
+js: (js,mode) => {
+  let indent = mode === 'pro' ? '  ' : ''; // Indentación según el modo
+  let braceSpace = mode === 'pro' ? ' {' : '{'; // Espacio antes de llaves según el modo
+  let nivel = 0; // Nivel de indentación inicial
+  let protectedParts = []; // Almacenamos todas las cadenas y comentarios para protegerlos  
+  function protect(match) {
+    protectedParts.push(match);
+    return `&#167;PROTECTED${protectedParts.length - 1}&#167;`;
+  } // Función para proteger una parte del código  
+  let processedCode = js
+    .replace(/\/\/[^\n]*|\/\*[\s\S]*?\*\//g, protect) // Proteger comentarios
+    .replace(/(["'`])((?:\\\1|(?!\1).)*?)\1/g, protect) // Proteger strings (comillas simples, dobles y backticks)
+    .replace(/=>/g, protect); // Proteger arrow functions  
+  processedCode = processedCode.replace(/;(\s*);/g, ';$1'); // Eliminar puntos y coma duplicados que puedan existir  
+  let formattedCode = processedCode
+    .replace(/([^;{}\n])\s*(\n|$)/g, function(match, p1, p2) {
+      const trimmed = p1.trim();
+      if (trimmed.endsWith(';') || trimmed.match(/&#167;PROTECTED\d+&#167;$/) && protectedParts[parseInt(trimmed.match(/&#167;PROTECTED(\d+)&#167;$/)[1])].endsWith(';')) return p1 + p2;
+      return p1 + ';' + p2;
+    }) // Añadir punto y coma solo si no existe ya
+    .replace(/}\s*;/g, '}') // Eliminar punto y coma después de llave de cierre
+    .replace(/\s*{\s*/g, braceSpace + '\n') // Formatear llaves de apertura
+    .replace(/\s*}\s*/g, '\n}\n') // Formatear llaves de cierre
+    .replace(/;\s*(?!\n)/g, '; ') // Añadir espacio después de punto y coma
+    .split('\n')
+    .map(line => {
+      line = line.trim();
+      if (!line) return ''; // Ignorar líneas vacías      
+      if (mode === 'pro') {
+        line = line
+          .replace(/([,=<>])([^\s&#167;])/g, '$1 $2') // Espacio después de operadores simples
+          .replace(/([^\s&#167;])([,=<>])/g, '$1 $2') // Espacio antes de operadores simples
+          .replace(/([^\|])\|\|([^\|])/g, '$1 || $2') // Corregir espacios en ||
+          .replace(/([^\&])&&([^\&])/g, '$1 && $2') // Corregir espacios en &&
+          .replace(/(\w):(\w)/g, '$1 : $2') // Espacio antes y después de :
+          .replace(/([^\s])([\+\*])([^\s])/g, '$1 $2 $3'); // Espacio en + y *
+      }
+      if (line === '}' || line === ']') nivel = Math.max(0, nivel - 1); // Reducir nivel de indentación
+      let result = indent.repeat(nivel) + line; // Aplicar indentación
+      if (line.endsWith('{') || line.endsWith('[')) nivel++; // Aumentar nivel de indentación
+      return result;
+    })
+    .join('\n')
+    .replace(/\n\s*\n/g, '\n'); // Eliminar líneas vacías duplicadas  
+  let result = formattedCode.replace(/&#167;PROTECTED(\d+)&#167;/g, (_, i) => protectedParts[parseInt(i)]); // Restaurar partes protegidas  
+  result = result.replace(/;(\s*);/g, ';$1'); // Eliminar puntos y coma duplicados finales  
+  return result.trim(); // Eliminar espacios al inicio y final
+}
+};
+// FUNCION PRETTIER  
+function hpretti(tipo){
+    let $txe = $('#ki02').val();
+    let modo = $('#pmpro').is(':checked') ? 'pro' : 'legible';
+    let resultado = lspretti[tipo]($txe, modo);
+    $('#rs02').val(resultado);
+}
+// EVENTOS CONVERSION HTML - CSS - JS 
+$('.phtml, .pcss, .pjs').on('click', function() {
+    let tipo = $(this).is('.phtml')?'html':$(this).is('.pcss')?'css': 'js'; 
+    hpretti(tipo);  
+});
+// HERRAMIENTA MINIFIER #03
+const lsmini = {
+  html: (html,mode)=> { //MINIFICADOR HTML[START]
+    let protectedParts = []; //Almacena parte protegidas (script, style, pre, textarea)
     
-});
-//MINIFIER #04
-$(function(){
-   const m={
-        h:h=>h.replace(/<!--[\s\S]*?-->/g,'')
-            .replace(/<(pre|textarea|script|style)[^>]*>[\s\S]*?<\/\1>/gi,m=>m.replace(/\s/g,'&#8962;'))
-            .replace(/\s+/g,' ')
-            .replace(/>\s+</g,'><')
-            .replace(/\s*(<[^>]*>)\s*/g,'$1')
-            .replace(/\s+$/gm,'')
-            .replace(/^\s+/gm,'')
-            .replace(/&#8962;/g,' ')
-            .trim(),
-        c:c=>c.replace(/\/\*[\s\S]*?\*\/|\/\/.*/g,'')
-            .replace(/[\n\r\t\s]+/g,' ')
-            .replace(/\s*{\s*/g,'{')
-            .replace(/\s*}\s*/g,'}')
-            .replace(/\s*:\s*/g,':')
-            .replace(/\s*;\s*/g,';')
-            .replace(/\s*,\s*/g,',')
-            .trim(),
-        j:j=>j.replace(/\/\*[\s\S]*?\*\/|\/\/.*/g,'')
-            .replace(/(["'])(?:(?=(\\?))\2.)*?\1/g,m=>m.replace(/\s/g,'&#8962;'))
-            .replace(/\s*([-+*/%=<>!&|,{}():;])\s*/g,'$1')
-            .replace(/[\n\r\t\s]+/g,' ')
-            .replace(/\s+/g,' ')
-            .replace(/&#8962;/g,' ')
-            .trim()
-    };
-    $(()=>{
-      $('#mhtml').click(function() {
-        $('#rs04').val(m.h($('#ki04').val()));
-        copied(this);
-      });
+    let processedHtml = html.replace(/<(pre|textarea|script|style)[^>]*>[\s\S]*?<\/\1>/gi,match=>{
+      protectedParts.push(match); // Guardar el contenido protegido
+      return `&#167;PROTECTED${protectedParts.length - 1}&#167;`; // Reemplaza protegido temporalmente
+    }); // Proteger contenido de etiquetas especiales (script, style, pre, textarea)
+    // Basico y lo essencial
+    processedHtml = processedHtml
+    .replace(/<!--[\s\S]*?-->/g, '') // Elimina comentarios HTML
+    .replace(/>\s+</g, '><'); // Elimina espacios entre etiquetas HTML
+    if (mode === 'normal') {
+      processedHtml = processedHtml
+      .replace(/^\s+|\s+$/gm, ''); // Elimina espacios al inicio y final de líneas
+    }// Modo 'normal': minificación ligera para conservar legibilidad
+    else if (mode === 'pro' || mode === 'ultra'){
+      processedHtml = processedHtml
+      .replace(/\s+/g, ' ') // Reemplaza múltiples espacios seguidos por un solo espacio
+      .replace(/\s*([<>])\s*/g, '$1') // Elimina espacios alrededor de < >
+      .replace(/\s+/g, ' ') // Asegura que solo quede un espacio entre palabras
+      .trim(); // Eliminar espacios al inicio y final      
+      if (mode === 'ultra') {
+        processedHtml = processedHtml
+        .replace(/\s([^\s=]+)="([^"]+)"/g, ' $1=$2') // Quitamos comillas en atributos si es posible
+        .replace(/\s+/g, ' ') // De nuevo, aseguramos que todo esté compacto
+        .replace(/^\s+|\s+$/g, ''); // Eliminar espacios al inicio y final
+      }// Modo 'ultra': minificación extrema
+    }
+    // Restaurando contenido protegido y aplicar minificación interna si es necesario en ultra
+    return processedHtml.replace(/&#167;PROTECTED(\d+)&#167;/g, (_, i) => {
+      let content = protectedParts[parseInt(i)];      
+      if ((mode === 'ultra') && (content.match(/<script[^>]*>/) || content.match(/<style[^>]*>/))){       
+        if (content.match(/<script[^>]*>/)){
+          let scriptContent = content.replace(/<script[^>]*>([\s\S]*?)<\/script>/i, '$1');
+          let minifiedScript = lsmini.js(scriptContent, mode);
+          content = content.replace(/(script[^>]*>)([\s\S]*?)(<\/script>)/i, `$1${minifiedScript}$3`);
+        } // Minificar JavaScript dentro de etiquetas script en HTML si es Ultra
+        if (content.match(/<style[^>]*>/)){
+          let styleContent = content.replace(/<style[^>]*>([\s\S]*?)<\/style>/i, '$1');
+          let minifiedStyle = lsmini.css(styleContent, mode);
+          content = content.replace(/(style[^>]*>)([\s\S]*?)(<\/style>)/i, `$1${minifiedStyle}$3`);
+        } // Minificar CSS dentro de etiquetas style si es Ultra
+      } //Minificacion de ultra en style y script[END]      
+      return content;
+    });  
+}, //[HTML MINIFICADOR[END]]
+css: (css, mode)=> {
+  let processedCss = css.replace(/\/\*[\s\S]*?\*\//g, ''); // Elimina todos los comentarios CSS  
 
-      $('#mcss').click(function() {
-        $('#rs04').val(m.c($('#ki04').val()));
-        copied(this);
-      });
+  if (mode === 'normal'){
+    processedCss = processedCss
+      .replace(/\s+/g, ' ') // Convertimos varios espacios en uno solo.
+      .replace(/\s*([{}:;,])\s*/g, '$1') // Quitamos espacios innecesarios alrededor de llaves, dos puntos, etc.
+      .trim(); // Eliminamos espacios al inicio y final.
+  } // MODO NORMAL - Una minificacion esencial   
+  else if (mode === 'pro'){
+    processedCss = processedCss
+      .replace(/\s+/g, ' ') // Igual que antes, reducimos los espacios.
+      .replace(/\s*([{}:;,])\s*/g, '$1') // Quitamos espacios en  `color: red ;` &#8594; `color:red;`
+      .replace(/\b0(px|em|rem|vh|vw|%|pt|pc|in|cm|mm|ex|ch)\b/g, '0') // Si un valor es "0px", lo dejamos solo como "0".
+      .trim();
+  } // MODO PRO - Una minificacion profesional  
+  else if (mode === 'ultra'){
+    processedCss = processedCss
+      .replace(/\s+/g, ' ') // Igual que antes, reducimos los espacios.
+      .replace(/\s*([{}:;,])\s*/g, '$1') // Quitamos espacios en  `color: red ;` &#8594; `color:red;`
+      .replace(/\b0(px|em|rem|vh|vw|%|pt|pc|in|cm|mm|ex|ch)\b/g, '0') // Si un valor es "0px", lo dejamos solo como "0".
+      .replace(/\bblack\b/g, '#000') // 🎨 Convertimos "black" a "#000"
+      .replace(/\bwhite\b/g, '#fff') // 🎨 Convertimos "white" a "#fff"
+      .replace(/\bred\b/g, '#f00') // 🎨 Convertimos "red" a "#f00". 
+      .replace(/\bgreen\b/g, '#0f0') // 🎨 Convertimos "green" a "#0f0". 
+      .replace(/\bblue\b/g, '#00f') // 🎨 Convertimos "blue" a "#00f". 
+      .replace(/;}/g, '}')  // Quitamos ';' asi ;} lo quitamos porque es innecesario.
+      .trim();
+    }// MODO ULTRA - Una minificacion mucho mejor
+  return processedCss;
+}, //[CSS MINIFICADOR[END]]
+js: (js, mode) => {
+  let protectedParts = []; // Almacena protección claves
+  let processedJs = js;
 
-      $('#mjs').click(function() {
-        $('#rs04').val(m.j($('#ki04').val()));
-        copied(this);
-      });
-    });
+  function protect(match) {
+    protectedParts.push(match);
+    return `&#167;PROTECTED${protectedParts.length - 1}&#167;`;
+  } // Función protect  
+  processedJs = processedJs.replace(
+    /(["'`])((?:\\\1|(?!\1).)*?)\1/g,
+    protect
+  ); // Proteger strings
+  
+  if (mode === 'normal'){
+processedJs = processedJs
+    .replace(/\/\/[^\n]*(\n|$)/g, '$1') // Comentarios de una línea
+    .replace(/\/\*[\s\S]*?\*\//g, '') // Comentarios multilínea
+    .replace(/^[ \t]+\n|^\n/mg, '') // Eliminar líneas que queden totalmente vacías (o solo con espacios)    
+    .replace(/\n{3,}/g, '\n\n'); // Unificar varios saltos de línea consecutivos en un máximo de dos:
+  } // Modo normal: mantener legibilidad pero eliminar comentarios    
+  else if (mode === 'pro') {
+    processedJs = processedJs
+      .replace(/\/\/[^\n]*(\n|$)/g, ' $1')
+      .replace(/\/\*[\s\S]*?\*\//g, ' ')
+      .replace(/\s+/g, ' ')
+      .replace(/\s*([{}()[\]:;,=+\-*/<>!|&?])\s*/g, '$1')
+      .trim();
+  } // Modo pro: optimización moderada  
+  else if (mode === 'ultra') {
+    processedJs = processedJs      
+      .replace(/\/\/.*?[\r\n]|\/\*[\s\S]*?\*\//g, '') // Eliminar comentarios     
+      .replace(/return\s+/g, 'return ') // Proteger espacios críticos
+      .replace(/\b(if|for|while|let|const|function)\b\s+/g, '$1 ') //Para dar espacio de cada función      
+      .replace(/\s*([=+\-*/<>!|&?])\s*/g, '$1') // Optimizar operadores manteniendo espacios necesarios
+      .replace(/\s*([{}()[\]:;,])\s*/g, '$1') // Eliminar espacios múltiples
+      .replace(/\s+/g, ' ') // Eliminar espacios múltiples
+      .replace(/\s+([{}()[\]:;,])/g, '$1') // Eliminar espacios innecesarios finales
+      .replace(/([{}()[\]:;,])\s+/g, '$1') // Eliminar espacios innecesarios finales
+      .replace(/;\s*}/g, '}') // Optimización final
+      .trim();
+  } // Modo ultra: máxima compresión segura    
+  return processedJs.replace(/&#167;PROTECTED(\d+)&#167;/g, (_, i) => protectedParts[parseInt(i)]); // Restaurar protegidos
+} //[JS MINIFICADOR[END]]
+}; // LSMINI - MINIFICADOR DE HTML - CSS - JS [END]
+// FUNCION PARA FORMATEAR BYTES EN UN FORMATO LEGIBLE
+function formatBytes(bytes) {
+    if (bytes < 1024) return bytes + " bytes";  // Mostrar en BYTES (<1KB)
+    else if (bytes < 1048576) return (bytes / 1024).toFixed(1) + " KB"; // Mostrar en KB
+    else return (bytes / 1048576).toFixed(1) + " MB"; // Mostrar en MB
+} //Para calcular el tamaño de archivos
+// FUNCIÓN PRINCIPAL DE MINIFICACIÓN
+function mmini(msg, tipo) {
+    let $txe = $('#ki03').val(); // ENTRADA
+    let originalSize = $txe.length; // TAMAÑO ORIGINAL 
+  
+    let modo; //Obtenemos los 3 modos
+    if ($('#minormal').is(':checked')) modo = 'normal';
+    else if ($('#mipro').is(':checked')) modo = 'pro';
+    else if ($('#miultra').is(':checked')) modo = 'ultra';
+    
+    let hmsg = $(msg).siblings('.hmsg');  hmsg.html('Resultado:'); // Restaurar mensaje   
+    // Procesar el código - Mostrar resultado y Calcular y mostrar estadísticas
+    try {
+        let resultado = lsmini[tipo]($txe, modo);
+        $('#rs03').val(resultado); 
+        let newSize = resultado.length;
+        let reduction = originalSize - newSize;
+        let percentage = Math.round((reduction / originalSize) * 100);
+        hmsg.html(`Resultado: <span class="stats">Original: ${formatBytes(originalSize)} | Después: ${formatBytes(newSize)} | Ganado: ${percentage}%</span>`);
+    } catch (error) {
+        hmsg.html(`<span class="error">Error al procesar: ${error.message}</span>`);
+    }
+} //Para actualizar funcionamiento de modos
+// EVENTOS PARA MINIFICACIÓN HTML - CSS - JS 
+$('.mhtml, .mcss, .mjs').on('click', function() {
+    let tipo = $(this).is('.mhtml') ? 'html' : $(this).is('.mcss') ? 'css' : 'js'; 
+    mmini(this, tipo);  
+}); // Manejador de eventos para los botones de minificación
+// EVENTO PARA LIMPIAR RESULTADO AL CAMBIAR DE MODO
+$('#ht03 .inx').on('change', function(){
+  let $el = $(this).closest('.hct');
+  $el.find('.hmsg').html('Resultado:'); // Restaurar mensaje
+  $el.find('.txrs').val(''); // Limpiar resultado
 });
-//CONTADOR #05
-$(function(){
-    function contador(){
-        const ts=$('#ki05').val();
-        $('#cdpl').text(ts.trim()?ts.trim().split(/\s+/).length:0);
-        $('#cdcs').text(ts.replace(/\s/g,'').length);
-        $('#cdcc').text(ts.length);
-        $('#cdpr').text(ts.trim()?ts.split(/\n\s*\n/).filter(p=>p.trim()).length:0);
-        $('#cdln').text(ts.trim()?ts.split('\n').length:0);
-    }contador(); $('#ki05').on('input',contador);
-}); 
-//COLORES #06
-$(function(){
+// HERRAMIENTA NOTEPAD #04
+$('#ht04 .inx').on('change',function(){
+  $(this).is('#ntpd:checked')? adrm('#ki041','npda') : $(this).is('#ntpro:checked')? adrm('#ki042','npda') : adrm('#ki043','npda');
+});
+// HERRAMIENTA CONTADOR #05
+$('#rb05 .dbtx').map((_,v)=>{
+    let $v = $(v); return $v.html(`<span>${$v.text()}</span><b>0</b>`);
+});
+function contador(){
+    const ts = $('#ki05').val();
+    const datos = [
+        ts.trim() ? ts.trim().split(/\s+/).length : 0, // Palabras
+        ts.replace(/\s/g, '').length,                 // Caracteres sin espacios
+        ts.length,                                    // Caracteres con espacios
+        ts.trim() ? ts.split(/\n\s*\n/).filter(p => p.trim()).length : 0, // Párrafos
+        ts.trim() ? ts.split('\n').length : 0        // Líneas
+    ];        
+    $('#rb05 b').map((i, v) => $(v).text(datos[i]));
+
+}contador(); $('#ki05').on('input', contador);
+  
+// HERRAMIENTA COLORES #06
 function colorpd(){
   $('#rs06').html(
-      $('#ki06').val().match(/--([\w-]+):\s*(#[A-Fa-f0-9]+);?/g)?.map(m => {
-          const [name, value] = m.match(/--([\w-]+)|#[A-Fa-f0-9]+/g);
-          return `<div class="cols">
-              <span class="conm">${name}</span>
-              <span class="covl">${value}</span>
-              <div class="cobg" style="background-color:${value}"></div>
-          </div>`;
-      }).join('') || '')
- }colorpd();
-
+    $('#ki06').val().match(/--([\w-]+):\s*(#[A-Fa-f0-9]+);?/g)?.map(m => {
+        const [name, value] = m.match(/--([\w-]+)|#[A-Fa-f0-9]+/g);
+        return `<div class="copd dfc">
+            <span>${name}</span><span>${value}</span>
+            <div style="background-color:${value}"></div>
+        </div>`;
+  }).join('') || '');
+}colorpd();
 $('#ki06').on('input', colorpd);
-});
-//MAYUSCULAS #07
-$(function(){
-const transforms = {
-   upper: t => t.toUpperCase(),
-   lower: t => t.toLowerCase(), 
-   capital: t => t.toLowerCase().replace(/(^|\s)\w/g, c => c.toUpperCase()),
-   sentence: t => t.toLowerCase().replace(/(^|[.!?]\s+)\w/g, c => c.toUpperCase())
-};
-   const $out = $('#rs07'), $in = $('#ki07');
-   const transform = type => $out.val(transforms[type]($in.val()));
-
-    $('#may').click(function() {
-      transform('upper');
-      copied(this);
-    });
-
-    $('#min').click(function() {
-      transform('lower');
-      copied(this);
-    });
-
-    $('#mai').click(function() {
-      transform('capital');
-      copied(this);
-    });
-
-    $('#mdp').click(function() {
-      transform('sentence');
-      copied(this);
-    });
-
-   $in.on('input', () => transform('upper'));transform('sentence');
-});
-//CALCULOMES #08
-$(function(){
-    var hoy = new Date();
-    $("#fechahoy").val(hoy.toLocaleDateString('es-ES'));
-    function mtiempo(){
-        var [d, m, y] = $("#fecha0").val().split('/'),
-            inicio = new Date(y, m - 1, d),
-            meses = (hoy.getFullYear() - inicio.getFullYear()) * 12 + hoy.getMonth() - inicio.getMonth() + 1,
-            dias = hoy.getDate() - inicio.getDate();
-        if (dias < 0) meses--, dias += new Date(hoy.getFullYear(), hoy.getMonth(), 0).getDate();
-        $("#mtiempo").text(`${meses} meses y ${dias} días`); 
-    }
-    $("#fecha0").on('input', mtiempo);
-    mtiempo();
-});
-//IMAGENES #09
-$(function(){
-$('#ki09').on('paste', function(e){
+  
+// HERRAMIENTA MAYUSCULAS #07
+const formato= {
+   frmay: fm => fm.toUpperCase(),
+   frmin: fm => fm.toLowerCase(), 
+   frdp: fm => fm.toLowerCase().replace(/(^|\s)\w/g, c => c.toUpperCase()),
+   frpro: fm => fm.toLowerCase().replace(/(^|[.!?]\s+)\w/g, c => c.toUpperCase()),
+}; let lasform = 'frmay'; // Por defecto, mayúsculas
+$('.h07 .hbt').on('click',function(){
+  let tipo =$(this).is('.frmay')?'frmay':$(this).is('.frmin')?'frmin':$(this).is('.frdp')?'frdp': 'frpro';   
+  lasform = tipo; // Guarda el último formato usado
+  $('#rs07').val(formato[tipo]($('#ki07').val())); //Actualiza valores 
+  adrm(this,'gbta'); //Actualiza clases
+}); //Actualizar los botones
+$('#myauto').on('change',function(){
+  $(this).is(':checked') ? adrm('.'+lasform, 'gbta') : $('.'+lasform).removeClass('gbta');  
+}); //Actualizar los checkbox activos  
+$('#ki07').on('input',function(){
+   if ($('#myauto').is(':checked')) $('#rs07').val(formato[lasform]($(this).val()));
+}); //Actualizar el modo auto
+  
+// HERRAMIENTA IMAGENES #08 
+$('#ki08').on('paste', function(e){
   const item = [...(e.clipboardData || e.originalEvent.clipboardData).items].find(item => item.type.startsWith('image'));
   if(item){
       const $mim = new FileReader();
       $mim.onload = function(evt){
-          $('#ki09').html(`<img src="${evt.target.result}">`);
+          $('#ki08').html(`<img src="${evt.target.result}">`);
       }; $mim.readAsDataURL(item.getAsFile());
   }
 });
 $('.dcv').on('input change',function(){
   var $ts = $(this).val();
   $('.dci').css('background',$ts);
-  $('.dcv').val($ts);
-  savels('svdci',$ts,180);
-});$('.dcv').val(getls('svdci'));$('.dci').css('background',getls('svdci'))
-});
-// PAINTER #10
+  $('.dcv').val($ts); gosave('svdco', $ts)
+});getsave('svdco',(v)=> $('.dci').css('background',v));
+    
+// HERRAMIENTA PAINTER #09
 $(function(){
     const $canvas = $('#canvas'), canvas = $canvas[0], ctx = canvas.getContext('2d');
     const $textInput = $('#textInput');
@@ -690,17 +859,18 @@ $(function(){
             updateCanvas();
         }
     }; // Fondo blanco #fffff o localStorage
-    const handleUndo = () => {
-        if (state.undoStack.length > 1) {
-            state.undoStack.pop();
-            const img = new Image();
-            img.onload = () => {
-                mainCtx.clearRect(0, 0, canvas.width, canvas.height);
-                mainCtx.drawImage(img, 0, 0);
-                updateCanvas();
-            }; img.src = state.undoStack[state.undoStack.length - 1];
-        }
-    };
+    function handleUndo(){
+      if (state.undoStack.length > 1) {
+          state.undoStack.pop();
+          const img = new Image();
+          img.onload = () => {
+              mainCtx.clearRect(0, 0, canvas.width, canvas.height);
+              mainCtx.drawImage(img, 0, 0);
+              updateCanvas();
+          }; img.src = state.undoStack[state.undoStack.length - 1];
+      }
+
+    }; // Para deshacer las cosas
     const handleClear = () => {
         if (confirm('&#191;Estás seguro de que quieres limpiar el canvas?')) {
             mainCtx.clearRect(0, 0, canvas.width, canvas.height);
@@ -965,7 +1135,7 @@ $(function(){
         $('#downloadBtn').on('click', handleDownload);
         $('#copyBtn').on('click', handleCopy);
         $(document).on('keydown', async e => {
-            if ($('.hr10').hasClass('hra')) {
+            if ($('.hr09').hasClass('hra')) {
                 if (/INPUT|SELECT|TEXTAREA/.test(e.target.tagName) || e.target.isContentEditable) return;
                 const key = e.key.toLowerCase();
                 if (e.ctrlKey && e.shiftKey && key === 's') {
@@ -987,7 +1157,7 @@ $(function(){
                     e.preventDefault();
                     handleDuplicate();
                 } else if (e.ctrlKey && key === 'z') {
-                    e.preventDefault();
+                    e.preventDefault(); 
                     handleUndo();
                 } else if (e.ctrlKey && key === 'c') {
                     e.preventDefault();
@@ -1047,17 +1217,8 @@ $(function(){
     // Inicialización de la aplicación
     initializeCanvas(); initEvents();
 });
-//PANTALLA #11
-$(function(){
-  function calcPantalla(){
-    $('.wdv').text($(window).width() + 'px');
-    $('.wdh').text($(window).height() + 'px');
-    $('.wdm').text(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile/i.test(navigator.userAgent) ? 'Sí' : 'No');
-    $('.wdo').text($(window).width() > $(window).height() ? 'landscape-primary' : 'portrait-primary');
-  }calcPantalla(); $(window).on('resize orientationchange',calcPantalla); $('.up11').click(()=>location.reload());  
-});
 
-//ACERCAPC #20
+// HERRAMIENTA ACERCA PC #10
 $(function(){
     let batteryManager = null;
     function obtenerInformacion(){
@@ -1115,19 +1276,11 @@ $(function(){
                 };}
         }
         const info = {
-            "VIEWPORT": [
-                ["Ancho", $(document).width() + " px"],
-                ["Altura", $(document).height() + " px"],
+            "TAMAÑO DE MI PANTALLA - VIEWPORT": [
+                ["Ancho view", $(document).width() + " px"],
+                ["Altura view", $(document).height() + " px"],
                 ["Es Móvil", isMobile ? "Sí" : "No"],
                 ["Orientación", (screen.orientation || {}).type || "No disponible"]
-            ],
-            "VENTANA": [
-                ["Ancho interior", $(window).width() + " px"],
-                ["Altura interior", $(window).height() + " px"],
-                ["Ancho exterior", window.outerWidth + " px"],
-                ["Altura exterior", window.outerHeight + " px"],
-                ["Posición X", window.screenX + " px"],
-                ["Posición Y", window.screenY + " px"]
             ],
             "PANTALLA": [
                 ["Ancho total", screen.width + " px"],
@@ -1136,6 +1289,14 @@ $(function(){
                 ["Altura disponible", screen.availHeight + " px"],
                 ["Profundidad de color", screen.colorDepth + " bits"],
                 ["Profundidad de píxeles", screen.pixelDepth + " bits"],                
+            ],
+            "VENTANA": [
+                ["Ancho interior", $(window).width() + " px"],
+                ["Altura interior", $(window).height() + " px"],
+                ["Ancho exterior", window.outerWidth + " px"],
+                ["Altura exterior", window.outerHeight + " px"],
+                ["Posición X", window.screenX + " px"],
+                ["Posición Y", window.screenY + " px"]
             ],
             "NAVEGADOR": [
                 ["Navegador", detectarNavegador()],
@@ -1195,29 +1356,24 @@ $(function(){
             </table>
         `).join('');
 
-        $('.ct20').html(html);
+        $('.ct10').html(html);
 }
-    $('.up20').on('click', function() {
+    $('.up10').on('click',function(){
         obtenerInformacion(); 
         $(this).attr('title', "Actualizado: " + new Date().toLocaleString());
+        location.reload()
     });
     $(window).on('resize orientationchange online offline', obtenerInformacion);
     obtenerInformacion();
-});
- 
+}); 
   
-
-// SUBIENDO GOOGLE FONTS MORE
-const wicon = '<script src="https://cdn.jsdelivr.net/gh/wtaype/wicon@v1.71/wicon.min.js"><\/script>';
-const mstyles = '<style>@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");</style>';
-$('head').append(`${wicon}${mstyles} `);
-//DIOS ES MI SALVADOR[END] 
-})):setTimeout(mijQuery,50)}let lQt=7000,lQv=0,lQz=!localStorage.getItem('wquery');lQz?(["scroll","mousemove"].forEach(e=>addEventListener(e,ldjQuery)),setTimeout(ldjQuery,lQt)):ldjQuery();function ldjQuery(){if(!lQv){lQv=1;lQz&&["scroll","mousemove"].forEach(e=>removeEventListener(e,ldjQuery));let s=document.createElement("script");s.src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js";s.onload=()=>{localStorage.setItem("wquery","wi");mijQuery()};document.head.appendChild(s)}}
+//DIOS ES PROTECTOR [END MIJQUERY] 
+})):setTimeout(mijQuery,50)}let lQt=7000,lQv=0,lQz=!localStorage.getItem('wquery');lQz?(["scroll","mousemove"].forEach(e=>addEventListener(e,ldjQuery)),setTimeout(ldjQuery,lQt)):ldjQuery();function ldjQuery(){if(!lQv){lQv=1;lQz&&["scroll","mousemove"].forEach(e=>removeEventListener(e,ldjQuery));let s=document.createElement("script");s.src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js";s.onload=()=>{localStorage.setItem("wquery","wiii");mijQuery()};document.head.appendChild(s)}}
 </script>
 <script>
-//THEMES WEB
-const sth=e=>{const[t,c]=e.dataset.tema.split('|');document.documentElement.dataset.theme=t,(document.querySelector('meta[name="theme-color"]')||Object.assign(document.head.appendChild(document.createElement('meta')),{name:'theme-color'})).content=c,localStorage.mtheme=e.dataset.tema,document.querySelector('.mtha')?.classList.remove('mtha'),e.classList.add('mtha')};sth(document.querySelector(`[data-tema="${localStorage.mtheme}"]`)||document.querySelector('.mtha'));document.querySelectorAll('[data-tema]').forEach(e=>e.onclick=()=>sth(e));
-    
+//THEMES WEB[START]
+const mthemas=[{tnm:"Cielo",co:"#0EBEFF"},{tnm:"Dulce",co:"#FF5C69"},{tnm:"Paz",co:"#29C72E"},{tnm:"Mora",co:"#7000FF"},{tnm:"Futuro",co:"#21073B"}];const thcon=document.createElement('div');thcon.className='mthemes';mthemas.forEach(({tnm,co})=>{const tdv=document.createElement('div');tdv.className='tema';tdv.dataset.tema=`${tnm}|${co}`;tdv.style.background=co;tdv.onclick=()=>mithm(tdv);thcon.appendChild(tdv);});document.body.appendChild(thcon);const mithm=e=>{const [th,tco]=e.dataset.tema.split('|');document.documentElement.dataset.theme=th;(document.querySelector('meta[name="theme-color"]')||Object.assign(document.head.appendChild(document.createElement('meta')),{name:'theme-color'})).content=tco;localStorage.mtheme=e.dataset.tema;document.querySelector('.mtha')?.classList.remove('mtha');e.classList.add('mtha');};const thsved=document.querySelector(`[data-tema="${localStorage.mtheme}"]`)||thcon.firstChild;if(thsved)mithm(thsved);
 </script>
+
 </body>
 </html>
